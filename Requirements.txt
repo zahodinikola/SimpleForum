@@ -1,0 +1,31 @@
+﻿The application is a simple forum … but there will be quite a lot to code. I will be doing some coding myself too (to write backend web service you can call and help with gulp build scripts in the beginning). Also I will help with deploying the application so it will be visible online once we have something stable.
+
+
+Pages I can think about at the moment are:
+1. Login page
+   1. Enter username/pass and login
+   2. Show error if login failed
+   3. Show button to create a new account (or rather redirect to New User page)
+1. New User page
+   1. Capture information about user (name, email, password) and create a new account
+   2. (later, not in phase #1) Avatar picture
+1. Landing page
+   1. Show information on all topics
+      1. Title
+      2. Date started and/or date of the last message
+      3. Number of messages
+         1. Total
+         2. Unread
+      1. Show flame icon for hot topics (with more than 10 messages for example).
+   1. Show button to start new topic which opens Reply page
+1. View Topic page
+   1. Show all messages
+      1. Title
+      2. User info
+         1. Name
+         2. Avatar
+      1. Message body
+   1. For each message show “Reply” button which opens Reply page
+1. Reply page
+   1. Shows fields to create a new message (title, message body)
+   2. If we came to this page from by replying to a message, then the original message should be quoted (added with > before each line and information on author and date of the original message).

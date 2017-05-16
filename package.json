@@ -1,0 +1,17 @@
+{
+  "name": "SimpleForum",
+  "version": "1.0.0",
+  "description": "This project is a sample forum developed basing on AngularJS framework",
+  "main": "index.html",
+  "dependencies": {
+	"express": "4.15.2"
+  },
+  "devDependencies": {
+
+  },
+  "scripts": {
+
+  },
+  "author": "Andrey",
+  "license": "ISC"
+}
