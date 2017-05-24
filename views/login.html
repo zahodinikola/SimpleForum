@@ -6,9 +6,9 @@
         <meta http-equiv="X-UA-Compatible" content="ie-edge">
         <link rel="stylesheet" type="text/css" href="../app/assets/css/login.css">
         <title>Login</title> 
-    </head>
-    <body>
-        <form action="./response.js" method="post" >
+    </head>    
+    <body ng-app="app">
+        <form action="./response.js" method="post" ng-controller="loginCtrl">
             <fieldset>
                 <legend>Login information</legend>
                 
@@ -19,15 +19,17 @@
                 <p>Input Email here: for example userName@mail.com</p>
                 <label for="emailField">Email: </label>
                 <input type="text" required name="userEmail" id="emailField"
-                        value="user@mail.com" pattern="[a-z0-9._]+@[a-z0-9._]+\.[a-z]{2,3}"><br>
+                        value="user@mail.com" pattern="[a-z0-9._]+@[a-z0-9._]+\.[a-z]{2,3}"
+                        ng-model="inputUsername"><br>
                 <p>Input password here, 6 charachters minimum, should contain [0-9|a-z|A-z] only</p>
                 <label for="passwordField">Password: </label>
                 <input type="password" required name="userPassword" id="passwordField"
-                        value="6 chars minimum" pattern="[0-9a-zA-z]{6,}"><br>
+                        value="6 chars minimum" pattern="[0-9a-zA-z]{6,}"
+                        ng-model="inputPassword"><br>
                 <label for="ifHidePassword">Hide symbols: </label>
                 <input type="checkbox" id="ifHidePassword" checked onchange="flipVisibility()"><br>
                 
-                <input type="submit" value="Submit">
+                <input type="button" value="Submit" ng-click="tryLogin()" ng-disabled="">
                 <input type="button" value="Cancel" onclick="alert('go back')"
             </fieldset>
         </form>
@@ -42,5 +44,8 @@
             }
         </script>
 
+        <script src="/app/json/user.js" type="javascript/text"></script>
+        <script src="/app/app.js" type="javascript/text"></script>        
+        <script src="/app/controller/loginCtrl.js" type="javascript/text"></script>
     </body>
 </html>
