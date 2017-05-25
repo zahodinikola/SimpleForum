@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" ng-app="simpleForum">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,29 +8,35 @@
         <title>Login</title> 
     </head>
     <body>
-        <form action="./response.js" method="post" >
-            <fieldset>
-                <legend>Login information</legend>
-                
-                <p>Input login name here</p>
-                <label for="loginField">Login: </label>
-                <input type="text" required name="userLogin" id="loginField"
-                        value="login" pattern="[a-z0-9A-Z._]*"autofocus><br>
-                <p>Input Email here: for example userName@mail.com</p>
-                <label for="emailField">Email: </label>
-                <input type="text" required name="userEmail" id="emailField"
-                        value="user@mail.com" pattern="[a-z0-9._]+@[a-z0-9._]+\.[a-z]{2,3}"><br>
-                <p>Input password here, 6 charachters minimum, should contain [0-9|a-z|A-z] only</p>
-                <label for="passwordField">Password: </label>
-                <input type="password" required name="userPassword" id="passwordField"
-                        value="6 chars minimum" pattern="[0-9a-zA-z]{6,}"><br>
-                <label for="ifHidePassword">Hide symbols: </label>
-                <input type="checkbox" id="ifHidePassword" checked onchange="flipVisibility()"><br>
-                
-                <input type="submit" value="Submit">
-                <input type="button" value="Cancel" onclick="alert('go back')"
-            </fieldset>
-        </form>
+        <div ng-controller="loginController">
+            {{checkLoginController}}
+            {{out}}
+            <form action="./response.js" method="post" >
+                <fieldset>
+                    <legend>Login information</legend>
+                    
+                    <p>Input login name here</p>
+                    <label for="loginField">Login: </label>
+                    <input type="text" required name="userLogin" id="loginField"
+                            value="login" pattern="[a-z0-9A-Z._]*"autofocus
+                            ng-model="inputUserLogin"><br>
+                    <p>Input Email here: for example userName@mail.com</p>
+                    <label for="emailField">Email: </label>
+                    <input type="text" required name="userEmail" id="emailField"
+                            value="user@mail.com" pattern="[a-z0-9._]+@[a-z0-9._]+\.[a-z]{2,3}"><br>
+                    <p>Input password here, 6 charachters minimum, should contain [0-9|a-z|A-z] only</p>
+                    <label for="passwordField">Password: </label>
+                    <input type="password" required name="userPassword" id="passwordField"
+                            value="6 chars minimum" pattern="[0-9a-zA-z]{6,}"
+                            ng-model="inputUserPassword"><br>
+                    <label for="ifHidePassword">Hide symbols: </label>
+                    <input type="checkbox" id="ifHidePassword" checked onchange="flipVisibility()"><br>
+                    
+                    <input type="button" value="Submit" ng-click="isValidUser()">
+                    <input type="button" value="Cancel" onclick="alert('go back')"
+                </fieldset>
+            </form>
+        </div>
         <script>
             function flipVisibility() {
                 var x = document.getElementById("ifHidePassword").checked;
@@ -41,6 +47,10 @@
                 }
             }
         </script>
-
+    
+    <script src="../node_modules/angular/angular.js"></script>
+    <script src="../app/app.js"></script>
+    <script src="../app/controllers/loginController.js"></script>
+    <script src="../app/assets/usersData/loginData.js"></script>
     </body>
 </html>

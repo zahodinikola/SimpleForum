@@ -1,4 +1,4 @@
-simpleForum.controller('eventHandler', 
+simpleForum.controller('topicController', 
     function($scope) {
         $scope.message = "i'm working";
     })
