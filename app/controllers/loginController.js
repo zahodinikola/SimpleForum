@@ -11,14 +11,16 @@ function($scope) {
 
     $scope.isValidUser = function() {
         alert("entered isValidUser");
-        for ( var entry in loginData)
+        // alert($scope.inputUserLogin);
+        for(var i = 0; i < loginData.length; i++ )
         {
-            alert(entry.userName);
-            if (entry.userName === inputUserLogin && entry.password === inputUserPassword)
-            {
-                alert("gotcha");
+        //    alert(loginData[i].userName);
+           if (loginData[i].userName === $scope.inputUserLogin)
+           {
+                return alert("gotcha");
+                
             }
         }
-        alert("nope");
+        return alert("nope");
     }
 })

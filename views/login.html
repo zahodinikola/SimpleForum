@@ -18,8 +18,9 @@
                     <p>Input login name here</p>
                     <label for="loginField">Login: </label>
                     <input type="text" required name="userLogin" id="loginField"
-                            value="login" pattern="[a-z0-9A-Z._]*"autofocus
+                            value="login" pattern="[a-z0-9A-Z._\s]*"autofocus
                             ng-model="inputUserLogin"><br>
+                    {{inputUserLogin}}
                     <p>Input Email here: for example userName@mail.com</p>
                     <label for="emailField">Email: </label>
                     <input type="text" required name="userEmail" id="emailField"
