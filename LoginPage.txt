@@ -1,0 +1,25 @@
+﻿Tasks:
+1. UI/UX Design
+   1. Add “Sign up” button
+   2. Add “Remember me”
+      1. Implemented through cookies. Implementation is not needed now.
+   1. Validation
+      1. Do not show rules for fields until an error is made.
+      2. Display error message when email is wrong or password is too short (for sign up form).
+   1. Styles
+      1. Bootstrap themes
+      2. [Create custom styles when or if needed]
+2. Cleanup
+   1. Remove debug controls
+   2. Remove long descriptions of email and password fields.
+   3. “Cancel” button is not needed
+   4. Remove field for user name. Require only user email and password.
+3. Refactoring
+   1. Extract main page (index.html)
+   2. Extract service to work with user data.
+   3. Split user name to first and last in hardcoded array of users.
+   4. Rename “Hide symbols” to “Show password” and change functionality accordingly.
+   5. Start using Bootstrap
+      1. Show “hide symbols” in mobile resolution only.
+4. Routing
+5. Sign in using 3rd party providers (Google, Facebook) - backend is required

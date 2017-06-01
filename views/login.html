@@ -1,57 +1,31 @@
-<!doctype html>
-<html lang="en" ng-app="simpleForum">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie-edge">
-        <link rel="stylesheet" type="text/css" href="../app/assets/css/login.css">
-        <title>Login</title> 
-    </head>
-    <body>
-        <div ng-controller="loginController">
-            {{checkLoginController}}
-            {{out}}
-            <form action="./response.js" method="post" >
-                <fieldset>
-                    <legend>Login information</legend>
-                    
-                    <p>Input login name here</p>
-                    <label for="loginField">Login: </label>
-                    <input type="text" required name="userLogin" id="loginField"
-                            value="login" pattern="[a-z0-9A-Z._\s]*"autofocus
-                            ng-model="inputUserLogin"><br>
-                    {{inputUserLogin}}
-                    <p>Input Email here: for example userName@mail.com</p>
-                    <label for="emailField">Email: </label>
-                    <input type="text" required name="userEmail" id="emailField"
-                            value="user@mail.com" pattern="[a-z0-9._]+@[a-z0-9._]+\.[a-z]{2,3}"><br>
-                    <p>Input password here, 6 charachters minimum, should contain [0-9|a-z|A-z] only</p>
-                    <label for="passwordField">Password: </label>
-                    <input type="password" required name="userPassword" id="passwordField"
-                            value="6 chars minimum" pattern="[0-9a-zA-z]{6,}"
-                            ng-model="inputUserPassword"><br>
-                    <label for="ifHidePassword">Hide symbols: </label>
-                    <input type="checkbox" id="ifHidePassword" checked onchange="flipVisibility()"><br>
-                    
-                    <input type="button" value="Submit" ng-click="isValidUser()">
-                    <input type="button" value="Cancel" onclick="alert('go back')"
-                </fieldset>
-            </form>
-        </div>
-        <script>
-            function flipVisibility() {
-                var x = document.getElementById("ifHidePassword").checked;
-                if(x == true) {
-                    document.getElementById("passwordField").setAttribute("type", "password");
-                } else {
-                    document.getElementById("passwordField").setAttribute("type", "text");
-                }
-            }
-        </script>
-    
-    <script src="../node_modules/angular/angular.js"></script>
-    <script src="../app/app.js"></script>
-    <script src="../app/controllers/loginController.js"></script>
-    <script src="../app/assets/usersData/loginData.js"></script>
-    </body>
-</html>
+            <div>
+                <form action="./response.js" method="post" >
+                    <fieldset>
+                        <legend>Login information</legend>
+                        <label for="emailField">Email: </label>
+                        <input type="text" required name="userEmail" id="emailField"
+                                ng-model="inputUserEmail"
+                                ng-change="isValidEmail()">{{enteredValidEmail}}<br>
+                                <div style="color: red">{{emailErrorMessage}}</div><br />
+                        <label for="passwordField">Password: </label>
+                        <input type="password" required name="userPassword" id="passwordField"
+                                ng-model="inputUserPassword"
+                                ng-change="isValidPassword()">{{enteredValidPassword}}<br>
+                                <div style="color: red">{{passwordErrorMessage}}</div><br />
+                        <label for="showPassword">Show password</label>
+                        <input type="checkbox" id="showPassword" checked 
+                                ng-model="showPassword" ng-change="flipVisibility()">{{showPassword}}<br>
+                        
+                        <label for="ifRememberMe">Remember Me</label>
+                        <input type="checkbox" id="ifRememberMe"><br />
+                        
+                        <button class="btn"
+                                ng-model="button"
+                                ng-disabled="{{submitDisabled}}"
+                                ng-click="isValidUser()">Submit</button>{{submitDisabled}}
+
+                        <button>Sign up</button>
+
+                    </fieldset>
+                </form>
+            </div>
