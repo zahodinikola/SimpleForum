@@ -1,37 +1,43 @@
 simpleForum.controller("loginController",
-function($scope) {
+function loginController($scope) {
 
-    $scope.inputUserLogin = "login";
-    $scope.inputUserEmail = "login@mail.com";
-    $scope.inputUserPassword = "password";
-    $scope.enteredValidEmail = "false";
-    $scope.enteredValidPassword = "false";
-    $scope.submitDisabled = "true";
-    $scope.emailErrorMessage = "";
-    $scope.passwordErrorMessage = "";
-
+    $scope.userInput = {
+        login: "",
+        email: "",
+        password: ""
+    };
+   
+    $scope.enteredValidEmail = false;
+    $scope.enteredValidPassword = false;
+    $scope.submitDisabled = true;
+    $scope.emailFieldStyle = {"background-color": "pink"};
+    $scope.passwordFieldStyle = {"background-color": "pink"};
+    $scope.authorisationErrorMessage = "";
+    
     $scope.isValidEmail = function() {
-        var x = $scope.inputUserEmail.toString();
+        if($scope.userInput.email === undefined) return; 
+        var x = $scope.userInput.email.toString();
         var pattern = /[a-z0-9._]+@[a-z0-9._]+\.[a-z]{2,3}/;
         if (pattern.test(x)) {
             $scope.enteredValidEmail = "true";
-            $scope.emailErrorMessage = "";
+            $scope.emailFieldStyle = {"background-color": "lightgreen"};
         }else{
             $scope.enteredValidEmail = "false";
-            $scope.emailErrorMessage = "invalid email";
+            $scope.emailFieldStyle = {"background-color": "pink"};
         }
         $scope.submitDisabled = $scope.isSubmitDisabled();
     };
 
     $scope.isValidPassword = function() {
-        var x = $scope.inputUserPassword.toString();
+        if($scope.userInput.password === undefined) return;
+        var x = $scope.userInput.password.toString();
         var pattern = /[0-9a-zA-z]{6,}/;
         if (pattern.test(x)) {
             $scope.enteredValidPassword = "true";
-            $scope.passwordErrorMessage = "";
+            $scope.passwordFieldStyle = {"background-color": "lightgreen"};
         }else{
             $scope.enteredValidPassword = "false";
-            $scope.passwordErrorMessage = "password too short";
+            $scope.passwordFieldStyle = {"background-color": "pink"};
         }
         $scope.submitDisabled = $scope.isSubmitDisabled();
     };
@@ -45,20 +51,24 @@ function($scope) {
         }
     };
 
-    $scope.isValidUser = function() {
+    $scope.isValidUser = function(userInput, loginForm) {
+        
+        console.log(loginForm);
+        
         for(var i = 0; i < loginData.length; i++ )
         {
-           if (loginData[i].email === $scope.inputUserEmail
-                &&loginData[i].password === $scope.inputUserPassword)
+           if (loginData[i].email === $scope.userInput.email
+                &&loginData[i].password === $scope.userInput.password)
            {
+                $scope.authorisationErrorMessage = "";
                 return alert("gotcha");                
             }
         }
-        return alert("nope");
+        $scope.authorisationErrorMessage = "Wrong email or password";;
     };
 
     $scope.isSubmitDisabled = function() {
-        var submitDisabled = $scope.enteredValidEmail&&$scope.enteredValidPassword;
+        var submitDisabled = !(($scope.enteredValidEmail)&&($scope.enteredValidPassword));
         return submitDisabled;
     };
 })
