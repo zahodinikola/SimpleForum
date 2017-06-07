@@ -30,7 +30,9 @@
                         <button class="btn btn-primary"
                                 ng-model="submitDisabled"
                                 ng-disabled="submitDisabled"
-                                ng-click="isValidUser(userInput, loginForm)">Submit</button>
+                                ng-click="isValidUser(userInput, loginForm)">Submit
+                               {{enteredValidEmail}} {{enteredValidPassword}} {{submitDisabled}} 
+                        </button>
 
                         <button class="btn btn-default">Sign up</button>
 
