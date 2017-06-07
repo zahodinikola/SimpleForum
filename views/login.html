@@ -10,13 +10,13 @@
                                                
                         <label for="emailField">Email: </label>
                         <input id="emailField" type="text" required name="userEmail"
-                                ng-style="emailFieldStyle"
+                                ng-style="{ 'background-color': enteredValidEmail ? 'lightgreen' : 'pink' }"
                                 ng-model="userInput.email" placeholder="login@mail.com"
                                 ng-change="isValidEmail()"><br>
                                 
                         <label for="passwordField">Password: </label>
                         <input id="passwordField" type="password" required name="userPassword"
-                                ng-style="passwordFieldStyle"
+                                ng-style="{ 'background-color': enteredValidPassword ? 'lightgreen' : 'pink' }"
                                 ng-model="userInput.password" placeholder="password"
                                 ng-change="isValidPassword()"><br>
                                                         

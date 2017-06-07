@@ -10,8 +10,6 @@ function loginController($scope) {
     $scope.enteredValidEmail = false;
     $scope.enteredValidPassword = false;
     $scope.submitDisabled = true;
-    $scope.emailFieldStyle = {"background-color": "pink"};
-    $scope.passwordFieldStyle = {"background-color": "pink"};
     $scope.authorisationErrorMessage = "";
     
     $scope.isValidEmail = function() {
@@ -19,16 +17,16 @@ function loginController($scope) {
             var x = $scope.userInput.email.toString();
             var pattern = /[a-z0-9._]+@[a-z0-9._]+\.[a-z]{2,3}/;
             if (pattern.test(x)) {
-                $scope.enteredValidEmail = "true";
-                $scope.emailFieldStyle = {"background-color": "lightgreen"};
+                $scope.enteredValidEmail = true;
             }else{
-                $scope.enteredValidEmail = "false";
-                $scope.emailFieldStyle = {"background-color": "pink"};
+                $scope.enteredValidEmail = false;
             }
+            
             $scope.submitDisabled = $scope.isSubmitDisabled();
             return;
         };
-        $scope.enteredValidEmail = "false";
+
+        $scope.enteredValidEmail = false;
         $scope.emailFieldStyle = {"background-color": "pink"};
         $scope.submitDisabled = $scope.isSubmitDisabled();
     
@@ -39,17 +37,15 @@ function loginController($scope) {
             var x = $scope.userInput.password.toString();
             var pattern = /[0-9a-zA-z]{6,}/;
             if (pattern.test(x)) {
-                $scope.enteredValidPassword = "true";
-                $scope.passwordFieldStyle = {"background-color": "lightgreen"};
+                $scope.enteredValidPassword = true;
             }else{
-                $scope.enteredValidPassword = "false";
-                $scope.passwordFieldStyle = {"background-color": "pink"};
+                $scope.enteredValidPassword = false;
             }
             $scope.submitDisabled = $scope.isSubmitDisabled();
             return;
         };
-        $scope.enteredValidPassword = "false";
-        $scope.passwordFieldStyle = {"background-color": "pink"};
+
+        $scope.enteredValidPassword = false;
         $scope.submitDisabled = $scope.isSubmitDisabled();
     };
     
