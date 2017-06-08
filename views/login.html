@@ -1,41 +1,51 @@
-            <div>
+            <div class="row">
                 
-                <div style="color: red">
-                    {{authorisationErrorMessage}}
-                </div><br />
+                <div class="col-md-4"></div>
 
-                <form name="loginForm">
-                    <fieldset>
-                        <legend>Login information</legend>
-                                               
-                        <label for="emailField">Email: </label>
-                        <input id="emailField" type="text" required name="userEmail"
-                                ng-style="emailFieldStyle"
-                                ng-model="userInput.email" placeholder="login@mail.com"
-                                ng-change="isValidEmail()"><br>
-                                
-                        <label for="passwordField">Password: </label>
-                        <input id="passwordField" type="password" required name="userPassword"
-                                ng-style="passwordFieldStyle"
-                                ng-model="userInput.password" placeholder="password"
-                                ng-change="isValidPassword()"><br>
-                                                        
-                        <label for="showPassword">Show password</label>
-                        <input id="showPassword" type="checkbox" checked 
-                                ng-model="showPassword" ng-change="flipVisibility()"><br>
-                        
-                        <label for="ifRememberMe">Remember Me</label>
-                        <input id="ifRememberMe" type="checkbox"><br />
-                        
-                        <button class="btn btn-primary"
-                                ng-model="submitDisabled"
-                                ng-disabled="submitDisabled"
-                                ng-click="isValidUser(userInput, loginForm)">Submit
-                               {{enteredValidEmail}} {{enteredValidPassword}} {{submitDisabled}} 
-                        </button>
+                <div class="col-md-4">
+                    <div style="color: red">
+                        {{authorisationErrorMessage}}
+                    </div><br />
 
-                        <button class="btn btn-default">Sign up</button>
+                    <form name="loginForm">
+                        <fieldset>
+                            <legend>Login information</legend>
 
-                    </fieldset>
-                </form>
+                            <div class="row">                      
+                                <label for="emailField" class="col-md-4">Email: </label>
+                                <input id="emailField" type="text" class="col-md-6" required name="userEmail"
+                                        ng-style="emailFieldStyle"
+                                        ng-model="userInput.email" placeholder="login@mail.com"
+                                        ng-change="isValidEmail()">
+                            </div>
+                                    
+                            <div class="row">
+                                <label for="passwordField" class="col-md-4">Password: </label>
+                                <input id="passwordField" type="password" class="col-md-6" required name="userPassword"
+                                        ng-style="passwordFieldStyle"
+                                        ng-model="userInput.password" placeholder="password"
+                                        ng-change="isValidPassword()">
+                            </div>
+                                                            
+                            <label for="showPassword">Show password</label>
+                            <input id="showPassword" type="checkbox" checked 
+                                    ng-model="showPassword" ng-change="flipVisibility()"><br>
+                            
+                            <label for="ifRememberMe">Remember Me</label>
+                            <input id="ifRememberMe" type="checkbox"><br />
+                            
+                            <button class="btn btn-primary"
+                                    ng-model="submitDisabled"
+                                    ng-disabled="submitDisabled"
+                                    ng-click="isValidUser(userInput, loginForm)">Submit
+                                {{enteredValidEmail}} {{enteredValidPassword}} {{submitDisabled}} 
+                            </button>
+
+                            <button class="btn btn-default">Sign up</button>
+
+                        </fieldset>
+                    </form>
+                </div>
+
+                <div class="col-md-4"></div>
             </div>
