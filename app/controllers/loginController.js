@@ -10,9 +10,7 @@ function loginController($scope) {
     $scope.enteredValidEmail = false;
     $scope.enteredValidPassword = false;
     $scope.submitDisabled = true;
-    $scope.emailFieldStyle = {"background-color": "pink"};
-    $scope.passwordFieldStyle = {"background-color": "pink"};
-    $scope.authorisationErrorMessage = "";
+    $scope.authorisationErrorMessage = " ";
     
     $scope.isValidEmail = function() {
         if($scope.userInput.email !== undefined) {
@@ -20,16 +18,13 @@ function loginController($scope) {
             var pattern = /[a-z0-9._]+@[a-z0-9._]+\.[a-z]{2,3}/;
             if (pattern.test(x)) {
                 $scope.enteredValidEmail = true;
-                $scope.emailFieldStyle = {"background-color": "lightgreen"};
             }else{
                 $scope.enteredValidEmail = false;
-                $scope.emailFieldStyle = {"background-color": "pink"};
             }
             $scope.submitDisabled = $scope.isSubmitDisabled();
             return;
         };
         $scope.enteredValidEmail = false;
-        $scope.emailFieldStyle = {"background-color": "pink"};
         $scope.submitDisabled = $scope.isSubmitDisabled();
     
     };
@@ -40,16 +35,13 @@ function loginController($scope) {
             var pattern = /[0-9a-zA-z]{6,}/;
             if (pattern.test(x)) {
                 $scope.enteredValidPassword = true;
-                $scope.passwordFieldStyle = {"background-color": "lightgreen"};
             }else{
                 $scope.enteredValidPassword = false;
-                $scope.passwordFieldStyle = {"background-color": "pink"};
             }
             $scope.submitDisabled = $scope.isSubmitDisabled();
             return;
         };
         $scope.enteredValidPassword = false
-        $scope.passwordFieldStyle = {"background-color": "pink"};
         $scope.submitDisabled = $scope.isSubmitDisabled();
     };
     
@@ -75,12 +67,11 @@ function loginController($scope) {
                 return alert("gotcha");                
             }
         }
-        $scope.authorisationErrorMessage = "Wrong email or password";;
+        $scope.authorisationErrorMessage = "Wrong email or password";
     };
 
     $scope.isSubmitDisabled = function() {
         var _submitDisabled = !(($scope.enteredValidEmail)&&($scope.enteredValidPassword));
-        //alert("!(" + $scope.enteredValidEmail + '&&' + $scope.enteredValidPassword + ') = ' + _submitDisabled);
         return _submitDisabled;
     };
 })
