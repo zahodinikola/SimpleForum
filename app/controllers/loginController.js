@@ -1,5 +1,5 @@
 simpleForum.controller("loginController",
-function loginController($scope) {
+function loginController($scope, inputValidatorService) {
 
     $scope.userInput = {
         login: "",
@@ -10,19 +10,34 @@ function loginController($scope) {
     $scope.enteredValidEmail = false;
     $scope.enteredValidPassword = false;
     $scope.submitDisabled = true;
-    $scope.authorisationErrorMessage = " ";
-    
-    $scope.isValidEmail = function() {
+    $scope.authorisationErrorMessage = " ";    
 
+    function isEmailValid(inputEmail) {
+        
         var emailValidity = false;
-        if ($scope.userInput.email !== undefined) {
-            var x = $scope.userInput.email.toString();
+        if (inputEmail !== undefined) {
+            var x = inputEmail.toString();
             var pattern = /[a-z0-9._]+@[a-z0-9._]+\.[a-z]{2,3}/;
             emailValidity = pattern.test(x);
         }
 
+        return emailValidity;
+    }
+
+    // 1. try to clean up / remove redundant code in place
+    // 2. try to see if the function has more than one responsibility - split if possible and make sense
+    // 3. remove references to local variables or objects replacing them with function parameters
+    // 4. create new service and inject it into controller
+    // 5. move the function to the service and update calls to the function
+
+
+    // Controller - stateful
+    // Service    - stateless
+
+    $scope.validateEmail = function() {
+
+        $scope.enteredValidEmail = inputValidatorService.isEmailValid($scope.userInput.email);
         $scope.submitDisabled = $scope.isSubmitDisabled();
-        $scope.enteredValidEmail = emailValidity;
     };
 
     $scope.isValidPassword = function() {
