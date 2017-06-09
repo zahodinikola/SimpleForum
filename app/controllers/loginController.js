@@ -13,20 +13,16 @@ function loginController($scope) {
     $scope.authorisationErrorMessage = " ";
     
     $scope.isValidEmail = function() {
-        if($scope.userInput.email !== undefined) {
+
+        var emailValidity = false;
+        if ($scope.userInput.email !== undefined) {
             var x = $scope.userInput.email.toString();
             var pattern = /[a-z0-9._]+@[a-z0-9._]+\.[a-z]{2,3}/;
-            if (pattern.test(x)) {
-                $scope.enteredValidEmail = true;
-            }else{
-                $scope.enteredValidEmail = false;
-            }
-            $scope.submitDisabled = $scope.isSubmitDisabled();
-            return;
-        };
-        $scope.enteredValidEmail = false;
+            emailValidity = pattern.test(x);
+        }
+
         $scope.submitDisabled = $scope.isSubmitDisabled();
-    
+        $scope.enteredValidEmail = emailValidity;
     };
 
     $scope.isValidPassword = function() {
