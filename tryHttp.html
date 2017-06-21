@@ -43,14 +43,24 @@
                     //     };
                     // };
                     
+                    function makeCounter() {
+                        var currentCount = 1;
+
+                        return function() { 
+                            return currentCount++;
+                        };
+                    };
+
+                    var counter = makeCounter(); 
+                    
                     var currentEntry = 1;
                     var input1 = document.createElement('input');
                     input1.type = "text";
-                    input1.name = "url" + currentEntry;
+                    input1.name = "url" + counter;
 // 1st              input1.ng-model = "url";
                     var input2 = document.createElement('input');
                     input2.type = "button";
-                    input2.value = "get data" + currentEntry;
+                    input2.value = "get data" + counter;
 // 2nd              input2.ng-click = getData();
                     var br = document.createElement('br');
                     urlFieldSet.appendChild(input1);

@@ -25,12 +25,10 @@ simpleForum.factory('validator', function() {
         isValidUser:    function(email, password) {
                             for(var i = 0; i < loginData.length; i++ )
                                 {
-                                    if (loginData[i].email === email && loginData[i].password === password)
-                                    {
-                                            return true;                
-                                    } else {
-                                        return false;
-                                    }
+                                    
+                                    var userIsValid = loginData[i].email === email && loginData[i].password === password;
+                                    return userIsValid;
+                                    
                                 }
                         }
     }
