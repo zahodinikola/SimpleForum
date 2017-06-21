@@ -1,0 +1,37 @@
+# Oleg To-Do
+
+1) Docs
+   - breadcrumbs using Bootstrap(+Angular)
+   - how to show repeating data in Angular (ng-repeat)
+   - Bootstrap grid layout (12 cells per row)
+   - promises in JS and AngularJS
+2) Requirements for Forum landing page
+3) Some icons for messages (can use Bootstrap glyphs)
+4) An image for banner
+
+# Milestones for Andrey
+1) Promises
+   a) read docs
+   b) write test app using Angular (user enters URL, controller sends $http request and handles result with $q, start with one URL and then extend to multiple. Bonus task: write code to add/remove additional textboxes for URLs dynamically).
+
+2) Read on W3 schools - https://www.w3schools.com/bootstrap/bootstrap_grid_stacked_to_horizontal.asp
+
+3) Read about breadcrumbs and try to implement sample application (Oleg to send links). 
+
+4) Landing page based on design using hardcoded data.
+
+========================================================================
+
+5) Wire login and landing pages to real back-end (Oleg to provide back-end).
+
+6) Sign-up page (create user page).
+
+7) View topic page.
+
+8) Write message (new message or reply to existing one).
+
+9) Host the appplication and discuss hosting/DNS/Azure/AWS/CDNs.
+
+10) Switch Bootstrap theme.
+
+11) *Design touch up.
