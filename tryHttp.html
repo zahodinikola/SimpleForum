@@ -9,18 +9,56 @@
     </head>
     <body>
         <div ng-app="tryHttp" ng-controller="resultCtrl">
-            <p>{{1+2}}</p>
-            {{data}}
+            <div id="urlFieldSet">
+                    <div id="urlEntry">
+                        Input URL: <input type="text" name="url" ng-model="url">
+                        <input type="button" ng-click="getData()" value="get data">
+                        <p>{{data}}</p>
+                    </div>
+            </div>
+            <div>
+                <input type="button" ng-click="addExtraField()" value="append">
+                <input type="button" ng-click="delete()" value="delete">
+            </div>
         </div>
 
         <script>
 
             var app = angular.module("tryHttp", []);
             app.controller("resultCtrl", function($scope, $http) {
+                $scope.url = "data.html";
                 $scope.data = "raw";
-                $http.get("data.html").then(function(response) {
+           
+                $scope.getData = function() {
+                    $http.get($scope.url).then(function(response) {
                     $scope.data = response.data;
-                });
+                    });
+                };
+                $scope.addExtraField = function() {
+                    
+                    // var currentEntry = function() {
+                    //     var counter = 0;
+                    //     return function() {
+                    //         return counter++;
+                    //     };
+                    // };
+                    
+                    var currentEntry = 1;
+                    var input1 = document.createElement('input');
+                    input1.type = "text";
+                    input1.name = "url" + currentEntry;
+// 1st              input1.ng-model = "url";
+                    var input2 = document.createElement('input');
+                    input2.type = "button";
+                    input2.value = "get data" + currentEntry;
+// 2nd              input2.ng-click = getData();
+                    var br = document.createElement('br');
+                    urlFieldSet.appendChild(input1);
+                    urlFieldSet.appendChild(input2);
+                    urlFieldSet.appendChild(br);
+
+                    
+                };
             });
         </script>
 
