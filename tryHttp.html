@@ -22,10 +22,10 @@
             </div>
         </div>
 
-        <script>
+        <script type="text/javascript">
 
             var app = angular.module("tryHttp", []);
-            app.controller("resultCtrl", function($scope, $http) {
+            app.controller("resultCtrl", function($scope, $http, $compile) {
                 $scope.url = "data.html";
                 $scope.data = "raw";
            
@@ -54,20 +54,15 @@
                     var counter = makeCounter(); 
                     
                     var currentEntry = 1;
-                    var input1 = document.createElement('input');
-                    input1.type = "text";
-                    input1.name = "url" + counter;
-// 1st              input1.ng-model = "url";
-                    var input2 = document.createElement('input');
-                    input2.type = "button";
-                    input2.value = "get data" + counter;
-// 2nd              input2.ng-click = getData();
-                    var br = document.createElement('br');
-                    urlFieldSet.appendChild(input1);
-                    urlFieldSet.appendChild(input2);
-                    urlFieldSet.appendChild(br);
 
-                    
+                    var newDiv = $compile(angular.element('<div id="urlEntry">\
+                                                                Input URL: <input type="text" name="url" ng-model="url">\
+                                                                <input type="button" ng-click="getData()" value="get data">\
+                                                                <p>{{data}}</p>\
+                                                           </div>'))($scope);
+                                                           
+                    var urlFieldSet = angular.element(document.getElementById('urlFieldSet'));
+                    urlFieldSet.append(newDiv);
                 };
             });
         </script>
