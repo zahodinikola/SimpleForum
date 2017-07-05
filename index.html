@@ -9,14 +9,23 @@
         <title>Index</title> 
     </head>
     <body ng-cloak>
-        <div class="container">
+        <div class="container" ng-controller="mainController">
             <div class="navbar">
                 <div class="navbar-inner">
-                    <ul class="nav">
+                    <ul class="nav navbar-nav">
                         <li><a href="#/login">Login</a></li>
+                        <li><a href="#/signUp">Signup</a></li>
+                        <li><a href="#/landing">Landing</a></li>
                     </ul>
                 </div>
             </div>
+
+            <ol class="ab-nav breadcrumb">
+                <li ng-repeat="breadcrumb in breadcrumbs.get() track by breadcrumb.path" ng-class="{ active: $last }">
+                    <a ng-if="!$last" ng-href="#{{ breadcrumb.path }}" ng-bind="breadcrumb.label" class="margin-right-xs"></a>
+                    <span ng-if="$last" ng-bind="breadcrumb.label"></span>
+                </li>
+            </ol>
 
             <ng-view></ng-view>
 
@@ -27,9 +36,13 @@
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="./node_modules/angular/angular.js"></script>
     <script src="./node_modules/angular-route/angular-route.js"></script>
+    <script src="./node_modules/angular-breadcrumbs/dist/ng-breadcrumbs.min.js"></script>
     
     <script src="./app/app.js"></script>
     <script src="./app/controllers/loginController.js"></script>
+    <script src="./app/controllers/mainController.js"></script>
+    <script src="./app/controllers/landingController.js"></script>
+    <script src="./app/controllers/signupController.js"></script>
     <script src="./app/assets/usersData/loginData.js"></script>
     <script src="./app/services/validator.js"></script>
     <!--<script src="./response.js"></script>-->

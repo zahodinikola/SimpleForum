@@ -1,13 +1,4 @@
-<!doctype html>
-<html lang="en" ng-app="simpleForum">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie-edge">
-        <link rel="stylesheet" type="text/css" href="../app/assets/css/landing.css">
-        <title>Simple Forum</title>
-    </head>
-    <body ng-controller="topicController">
+     <body>
         {{message}}
         <table summary="This table contains topics">
             <caption>List of topics</caption>
@@ -31,23 +22,7 @@
                 </tr>
             </tfoot>
             <tbody>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
+                <tr ng-repeat="thread in threads">
                     <td></td>
                     <td></td>
                     <td></td>
@@ -56,16 +31,5 @@
                     <td></td>
                 </tr>
             </tbody>
-        </table>
-
-
-
-
-    <script src="../node_modules/angular/angular.js"></script>
-    <script src="../app/app.js"></script>
-    <script src="../app/controllers/topicController.js"></script>
+        </table>>
     </body>
-</html>
-
-
-
