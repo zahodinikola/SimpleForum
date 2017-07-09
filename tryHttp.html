@@ -15,16 +15,16 @@
 			<div class="container">
 			
 				<div id="urlFieldSet">
-					<div id="inputEntry">
-						<select ng-model="method">
+					<div id="entry0">
+						<select ng-model="method[0]">
 							<option value="GET">Get</option>
 							<option value="POST">Post</option>
 						</select>
-						<input type="text" ng-model="url" ng-pattern="/^[a-z0-9.-]+$/"></input>
-						<input class="btn" type="button" ng-click="getData()" value="Get Data"></input>
+						<input type="text" ng-model="url[0]" ng-pattern="/^[a-z0-9.-]+$/"></input>
+						<input class="btn" type="button" ng-click="getData(0)" value="Get Data"></input>
 						<input class="btn" type="button" ng-click="appendField()" value="+"></input>
                         <input class="btn" type="button" ng-click="deleteField()" value="-"></input>
-						{{data}}
+						{{data[0]}}
 						<br />
 					
 					</div>
@@ -37,7 +37,7 @@
 			
 			
 			
-			<h3>{{method}}: {{url}}</h3>
+			<h3>{{index}} - {{method}}: {{url}}</h3>
 			
         </div>
 
@@ -45,34 +45,51 @@
 
             var app = angular.module("tryHttp", []);
             app.controller("resultCtrl", function($scope, $http, $compile) {
-                $scope.data = "raw";
+                $scope.data = ["raw"];
+				$scope.method = [];
+				$scope.url = [];
+				$scope.index = 0;
 								
-				$scope.getData = function() {
+				$scope.getData = function(index) {
 					$http({
-					method: $scope.method,
-					url: $scope.url,
+					method: $scope.method[index],
+					url: $scope.url[index],
 					})
 						.then (function success(response) {
-							$scope.data = response.data;
+							$scope.data[index] = response.data;
 							}, function error(reason) {
 							console.log(reason);
 							});
 					                
 					};
 				
+				function indexCounter() {
+				
+					var counter = 0;
+					
+					return function(option) {
+						return counter += option;
+						};
+					};
+				
+				var indexChange = indexCounter();
+			
 				$scope.appendField = function() {
 					
+					$scope.index = indexChange(1);
+					console.log($scope.index);
+					
 					var newEntry = $compile(angular.element(
-						'<div id="inputEntry">\
-							<select ng-model="method">\
+						'<div id="entry' + $scope.index + '">\
+							<select ng-model="method[' + $scope.index + ']">\
 								<option value="GET">Get</option>\
 								<option value="POST">Post</option>\
 							</select>\
-							<input type="text" ng-model="url" ng-pattern="/^[a-z0-9.-]+$/"></input>\
-							<input class="btn" type="button" ng-click="getData()" value="Get Data"></input>\
+							<input type="text" ng-model="url[' + $scope.index + ']" ng-pattern="/^[a-z0-9.-]+$/"></input>\
+							<input class="btn" type="button" ng-click="getData(' + $scope.index + ')" value="Get Data"></input>\
 							<input class="btn" type="button" ng-click="appendField()" value="+"></input>\
                             <input class="btn" type="button" ng-click="deleteField()" value="-"></input>\
-							{{data}}\
+							{{data[' + $scope.index + ']}}\
 							<br />\
 						</div>'))($scope);
 						
@@ -80,7 +97,16 @@
 					urlFieldSet.append(newEntry);
 					
 					};
-					
+
+				$scope.deleteField = function() {
+
+					var target = angular.element(document.querySelector("#entry" + $scope.index));
+					target.remove();
+
+					$scope.index = indexChange(-1);
+					console.log($scope.index);
+
+				}			
 					
 				
 			});
