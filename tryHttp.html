@@ -14,14 +14,17 @@
             
 			<div class="container">
 			
+				<form name="entries">
 				<div id="urlFieldSet">
 					<div id="entry0">
 						<select ng-model="method[0]">
 							<option value="GET">Get</option>
 							<option value="POST">Post</option>
 						</select>
-						<input type="text" ng-model="url[0]" ng-pattern="/^[a-z0-9.-]+$/"></input>
-						<input class="btn" type="button" ng-click="getData(0)" value="Get Data"></input>
+						<input type="text" ng-required ng-model="url[0]"
+								ng-pattern="/^[a-z0-9.-]+$/"></input>
+						<input class="btn" type="button" ng-click="getData(0)" 
+								value="Get Data" ng-disabled="$invalid"></input>
 						<input class="btn" type="button" ng-click="appendField()" value="+"></input>
                         <input class="btn" type="button" ng-click="deleteField()" value="-"></input>
 						{{data[0]}}
@@ -30,7 +33,7 @@
 					</div>
 			
 				</div>
-			
+				</form>
 			
 			
 			</div>
