@@ -24,7 +24,7 @@
 						<input type="text" ng-required ng-model="url[0]"
 								ng-pattern="/^[a-z0-9.-]+$/"></input>
 						<input class="btn" type="button" ng-click="getData(0)" 
-								value="Get Data" ng-disabled="$invalid"></input>
+								value="Get Data" ng-disabled="isDisabled"></input>
 						<input class="btn" type="button" ng-click="appendField()" value="+"></input>
                         <input class="btn" type="button" ng-click="deleteField()" value="-"></input>
 						{{data[0]}}
@@ -52,6 +52,7 @@
 				$scope.method = [];
 				$scope.url = [];
 				$scope.index = 0;
+				$scope.isDisabled = entries.$invalid;
 								
 				$scope.getData = function(index) {
 					$http({
