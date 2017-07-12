@@ -44,24 +44,45 @@
         <script>
 
             var app = angular.module("tryHttp", []);
-            app.controller("resultCtrl", function($scope, $http, $compile) {
+			
+			app.factory('getDataService', function($http, $q) {
+				return {
+					getData: function(method, url) {
+						var deferred = $q.defer();
+						$http({method: method, url: url})
+							.then(function success(response) {
+									deferred.resolve(response.data);
+								},function error(reason) {
+									deferred.reject(reason);
+								});
+						return deferred.promise;
+					}
+				}
+			});
+            
+			app.controller("resultCtrl", function($scope, getDataService, $compile) {
                 $scope.data = ["raw"];
 				$scope.method = [];
 				$scope.url = [];
 				$scope.index = 0;
 								
-				$scope.getData = function(index) {
-					$http({
-					method: $scope.method[index],
-					url: $scope.url[index],
-					})
-						.then (function success(response) {
-							$scope.data[index] = response.data;
-							}, function error(reason) {
-							console.log(reason);
-							});
+				$scope.getData = function () {
+					var promisObj = getDataService.getData(($scope.method[index]), ($scope.url[index]));
+					promisObj.then(function() {
+						$scope.data[index] = response.data;
+						})
+				};
+					// $http({
+					// method: $scope.method[index],
+					// url: $scope.url[index],
+					// })
+					// 	.then (function success(response) {
+					// 		$scope.data[index] = response.data;
+					// 		}, function error(reason) {
+					// 		console.log(reason);
+					// 		});
 					                
-					};
+					// };
 				
 				function indexCounter() {
 				
