@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <title>Topics List</title>
+
+</head>
+<body ng-app="topics" ng-controller="topicsController">
+    <div class="container">
+        <table class="table table-bordered">
+            <thead>
+                <tr style="background-color: lightgray">
+                    <th colspan=6></th>
+                </tr>
+                <tr>
+                    <th colspan=6>
+                        <h3>Android development</h3>
+                    </th>
+                </tr>
+                <tr>
+                    <th colspan=2>Topic</th>
+                    <th>Author</th>
+                    <th>Replies</th>
+                    <th>Views</th>
+                    <th>Last reply</th>
+                </tr>
+            </thead>
+            <tfoot>
+                <tr style="background-color:lightgray">
+                    <td colspan=6></td>
+                </tr>
+            </tfoot>
+            <tbody>
+                <tr ng-repeat="entry in topics">
+                    <td>
+                        <img ng-src="{{entry.icon}}">
+                    </td>
+                    <td>
+                        <p><a href="#"><u>{{entry.topic}}</u></a></p>
+                        <p>{{entry.description}}</p>
+                    </td>
+                    <td><a href=#><u>{{entry.author}}</a></u></td>
+                    <td>{{entry.replies}}</td>
+                    <td>{{entry.views}}</td>
+                    <td>
+                        <p><span class="glyphicon glyphicon-time"></span></p>
+                        <p><strong>Topic:</strong></p>
+                        <p><strong>Author:</strong></p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="../node_modules/angular/angular.js"></script>
+    <script>
+        var app = angular.module('topics', []);
+        app.controller('topicsController', function($scope) {
+            $scope.topics = [
+                {
+                    "icon": "../app/assets/img/ic_android_black_24dp_2x.png",
+                    "topic": "Android is awesome",
+                    "description": "Just switched from iOs and cannot be happier",
+                    "author": "Vovan",
+                    "replies": 1023,
+                    "views": 11
+                },
+                {
+                    "icon": "../app/assets/img/ic_accessibility_black_24dp_2x.png",
+                    "topic": "Buy, Buy, birdie",
+                    "description": "Spent 5 years fighting this @#$!#$! Enough for me! I'm moving to countryside to grow cabbage",
+                    "author": "Chiko",
+                    "replies": 34,
+                    "views": 3
+                },
+                {
+                    "icon": "../app/assets/img/ic_picture_as_pdf_black_24dp_2x.png",
+                    "topic": "Best book to start?",
+                    "description": "",
+                    "author": "4unCoder",
+                    "replies": 65,
+                    "views": 54
+                },
+                {
+                    "icon": "../app/assets/img/ic_help_outline_black_24dp_2x.png",
+                    "topic": "Stupid question #1",
+                    "description": "I can ask more stupid questions",
+                    "author": "Gogi",
+                    "replies": 32,
+                    "views": 345
+                },
+                {
+                    "icon": "../app/assets/img/ic_important_devices_black_24dp_2x.png",
+                    "topic": "Checkout my app",
+                    "description": "Just finished my first app and published in a Google Store. Please try and let me know ONLY if you like it.",
+                    "author": "Magogi",
+                    "replies": 27,
+                    "views": 68
+                },
+                {
+                    "icon": "../app/assets/img/ic_cloud_upload_black_24dp_2x.png",
+                    "topic": "Google Drive integration anyone?",
+                    "description": "What API to use?",
+                    "author": "Kent",
+                    "replies": 789,
+                    "views": 2
+                }
+            ];
+        });
+    </script>
+</body>
+</html>    
+</body>
+</html>

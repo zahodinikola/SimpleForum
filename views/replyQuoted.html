@@ -8,7 +8,7 @@
     <title>Create topic</title>
 
 </head>
-<body ng-app="reply" ng-controller="reply">
+<body ng-app="" ng-controller="">
     <div class="container">
         <table class="table table-bordered">
             <thead>
@@ -52,8 +52,8 @@
 
     <script src="../node_modules/angular/angular.js"></script>
     <script>
-        var app = angular.module('reply', []);
-        app.controller('reply', function($scope) {
+        var app = angular.module('', []);
+        app.controller('', function($scope) {
             $scope.saveReply = function() {
                 alert('saving');
             };

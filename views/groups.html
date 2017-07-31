@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <title>Groups List</title>
+
+    <style>
+        td {
+            display: table-cell;
+            vertical-align: middle;
+            margin-right: auto
+        }
+    </style>
+
+</head>
+<body ng-app="groups" ng-controller="groupsController">
+    <div class="container">
+        <table class="table table-bordered">
+            <thead>
+                <tr style="background-color: lightgray">
+                    <th colspan=5></th>
+                </tr>
+                <tr>
+                    <th colspan=5>
+                        <h3>Discussion groups</h3>
+                    </th>
+                </tr>
+                <tr>
+                    <th colspan=2>Group</th>
+                    <th>Topics</th>
+                    <th>Replies</th>
+                    <th>Last message</th>
+                </tr>
+            </thead>
+            <tfoot>
+                <tr style="background-color:lightgray">
+                    <td colspan=5></td>
+                </tr>
+            </tfoot>
+            <tbody>
+                <tr ng-repeat="entry in groups">
+                    <td>
+                        <img ng-src="{{entry.icon}}">
+                    </td>
+                    <td>
+                        <p><a href="#"><u>{{entry.group}}</u></a></p>
+                        <p>{{entry.description}}</p>
+                    </td>
+                    <td>{{entry.topics}}</td>
+                    <td>{{entry.replies}}</td>
+                    <td>
+                        <p><span class="glyphicon glyphicon-time"></span></p>
+                        <p><strong>Topic:</strong></p>
+                        <p><strong>Author:</strong></p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="../node_modules/angular/angular.js"></script>
+    <script>
+        var app = angular.module('groups', []);
+        app.controller('groupsController', function($scope) {
+            $scope.groups = [
+                {
+                    "icon": "../app/assets/img/android-big-logo-32.png",
+                    "group": "Android Development",
+                    "description": "Android developers - unite! This is the place to complain about your life and work",
+                    "topics": 1023,
+                    "replies": 11
+                },
+                {
+                    "icon": "../app/assets/img/android-big-logo-32.png",
+                    "group": "Android Development",
+                    "description": "Android developers - unite! This is the place to complain about your life and work",
+                    "topics": 1023,
+                    "replies": 11
+                },
+                {
+                    "icon": "../app/assets/img/android-big-logo-32.png",
+                    "group": "Android Development",
+                    "description": "Android developers - unite! This is the place to complain about your life and work",
+                    "topics": 1023,
+                    "replies": 11
+                },
+                {
+                    "icon": "../app/assets/img/android-big-logo-32.png",
+                    "group": "Android Development",
+                    "description": "Android developers - unite! This is the place to complain about your life and work",
+                    "topics": 1023,
+                    "replies": 11
+                },
+                {
+                    "icon": "../app/assets/img/android-big-logo-32.png",
+                    "group": "Android Development",
+                    "description": "Android developers - unite! This is the place to complain about your life and work",
+                    "topics": 1023,
+                    "replies": 11
+                },
+                {
+                    "icon": "../app/assets/img/android-big-logo-32.png",
+                    "group": "Android Development",
+                    "description": "Android developers - unite! This is the place to complain about your life and work",
+                    "topics": 1023,
+                    "replies": 11
+                }
+            ];
+        });
+    </script>
+</body>
+</html>    
+</body>
+</html>

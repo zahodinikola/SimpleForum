@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <title>Create topic</title>
+
+</head>
+<body ng-app="createTopic" ng-controller="createTopicController">
+    <div class="container">
+        <table class="table table-bordered">
+            <thead>
+                <tr style="background-color: lightgray">
+                    <th></th>
+                </tr>
+                <tr>
+                    <th>
+                        <h3>Create new topic</h3>
+                    </th>
+                </tr>
+            </thead>
+            <tfoot>
+                <tr style="background-color:lightgray">
+                    <td></td>
+                </tr>
+            </tfoot>
+            <tbody>
+               <form class="form-horizontal" name="newTopic">
+                    <tr>
+                        <td>
+                            <div class="form-group">
+                                <div class="col-sm-1">
+                                    <label class="control-label" for="subject">Subject:</label>
+                                </div>
+                                <div class="col-sm-11">
+                                    <input  type="text"
+                                            class="form-control"
+                                            id="subject"
+                                            name="subject"
+                                            ng-model="subject"
+                                            required
+                                            autofocus>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="col-sm-1"><span>Description:</span></div>
+                            <div class="col-sm-11"><input type="text" ng-model="description"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <textarea rows="10" cols="160" ng-model="content"></textarea>
+                        </td>
+                    </tr>
+               </form>
+            </tbody>
+        </table>
+        <div class="row">
+            <div class="col-sm-6 text-right">
+                <div>
+                    <button type="button" form="newTopic" class="btn btn-default" ng-click="save()">Post</button>
+                </div>
+            </div>
+            <div class="col-sm-6 text-left">
+                <div>
+                    <button type="button" class="btn btn-default" ng-click="cansel()">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../node_modules/angular/angular.js"></script>
+    <script>
+        var app = angular.module('createTopic', []);
+        app.controller('createTopoicController', function($scope) {
+            $scope.save = function() {
+                alert('saving');
+            };
+            $scope.cancel = function() {
+                alert('cancelling');
+            };
+        });
+    </script>
+</body>
+</html>    
+</body>
+</html>
