@@ -1,0 +1,2468 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <meta name="robots" content="noodp">
+        <meta property="og:type" content="article"/>
+        <meta property="og:url" content="https://www.allaboutcircuits.com/tools/resistor-color-code-calculator/"/>
+        <meta property="og:title" content="Resistor Color Code Calculator"/>
+        <meta property="og:image" content="https://www.allaboutcircuits.com/uploads/thumbnails/resistor-color-code-calculator.jpg"/>
+        <meta name="thumbnail" content="https://www.allaboutcircuits.com/uploads/thumbnails/resistor-color-code-calculator.jpg"/>
+        <meta property="og:description" content="A handy tool for reading resistor color code values"/>
+        <meta name="twitter:card" content="summary"/>
+        <meta name="twitter:site" content="@allaboutcircuit"/>
+        <script type="text/javascript">
+            
+//<![CDATA[
+try{if (!window.CloudFlare) {var CloudFlare=[{verbose:0,p:0,byc:0,owlid:"cf",bag2:1,mirage2:{profile:false},oracle:0,paths:{cloudflare:"/cdn-cgi/nexp/dok3v=1613a3a185/"},atok:"a3742b2168608d9bce81b8ff92305329",petok:"a3af32b7b71aa1b52b21488856bef5ed9c3734d5-1501523384-86400",zone:"allaboutcircuits.com",rocket:"0",apps:{}}];!function(a,b){a=document.createElement("script"),b=document.getElementsByTagName("script")[0],a.async=!0,a.src="//ajax.cloudflare.com/cdn-cgi/nexp/dok3v=85b614c0f6/cloudflare.min.js",b.parentNode.insertBefore(a,b)}()}}catch(e){};
+//]]>
+
+        </script>
+        <link href="https://plus.google.com/102476148263859151067/" rel="publisher"/>
+        <title>Resistor Color Code Calculator - Electrical Engineering &Electronics Tools</title>
+        <link rel="icon" href="/assets/images/favicon.ico">
+        <link rel="alternate" type="application/rss+xml" title="All About Circuits Articles" href="//www.allaboutcircuits.com/rss/"/>
+        <link rel="alternate" type="application/rss+xml" title="All About Circuits Forum RSS Feed" href="//forum.allaboutcircuits.com/forums/-/index.rss"/>
+        <link rel="alternate" type="application/rss+xml" title="All About Circuits Blog RSS Feed" href="//forum.allaboutcircuits.com/blogs/entriesRss.rss"/>
+        <link href="/assets/library/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+        <link href="/assets/css/combined.css?rob2017a" rel="stylesheet"/>
+        <link href="/assets/css/main_site.css" rel="stylesheet"/>
+        <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet"/>
+        <link href="/assets/css/aac-parts.css" rel="stylesheet">
+        <link href="/assets/css/new-search-result.css?a" rel="stylesheet">
+        <link href="/assets/library/adpopup-pro/css/adpopup-pro.min.css" rel="stylesheet"/>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <!--[if lt IE 9]>
+    <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/es5-shim/4.1.1/es5-shim.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/es5-shim/4.1.1/es5-sham.js"></script>
+    
+    <script src="/assets/js/css3-mediaqueries.js"></script>
+    <link href="/assets/css/ie8.css" rel="stylesheet">
+    <![endif]-->
+        <script type='text/javascript'>
+            
+      
+  function searchFor(obj, query) {
+    for(var key in obj) {
+      if(obj.hasOwnProperty(key) && (typeof obj[key] === "string")) {
+        if(obj[key] === query) {
+          return true;
+        }
+      }
+    }
+    return false;
+  }
+  var googletag = googletag || {};
+  googletag.cmd = googletag.cmd || [];
+  (function() {
+    var gads = document.createElement('script');
+    gads.async = true;
+    gads.type = 'text/javascript';
+    var useSSL = 'https:' == document.location.protocol;
+    gads.src = (useSSL ? 'https:' : 'http:') +
+      '//www.googletagservices.com/tag/js/gpt.js';
+    var node = document.getElementsByTagName('script')[0];
+    node.parentNode.insertBefore(gads, node);
+  })();
+
+        </script>
+        <script type='text/javascript'>
+            
+  googletag.cmd.push(function() {
+	var mappingSidebar = googletag.sizeMapping().
+    	addSize([0,0], [300, 250]).
+        addSize([800, 600], [[300, 600], [300, 250]]).
+        build();  
+        
+    googletag.pubads().setTargeting("category",["passives","wearables","tools","passives"]);
+    googletag.defineSlot('/62616433/main_sidebar', [[300, 600], [300, 250]], 'div-gpt-ad-1429623690593-0').defineSizeMapping(mappingSidebar).addService(googletag.pubads());
+    
+    googletag.pubads().enableSingleRequest();
+    googletag.pubads().collapseEmptyDivs();
+    googletag.enableServices();
+  });
+
+        </script>
+        <script type='text/javascript'>
+            
+  googletag.cmd.push(function() {
+	var mappingLeaderboard = googletag.sizeMapping().
+    	addSize([0,0], [320, 50]).
+        addSize([800, 600], [728,90]).
+        build();  
+  
+    googletag.defineSlot('/62616433/main_leaderboard', [[728, 90], [320,50]], 'div-gpt-ad-1430160961981-0').defineSizeMapping(mappingLeaderboard).addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.pubads().collapseEmptyDivs();
+    googletag.enableServices();
+  });
+
+        </script>
+        <script type='text/javascript'>
+            
+  googletag.cmd.push(function() {
+	var mappingWelcome = googletag.sizeMapping().
+    	addSize([0,0], [300, 250]).
+        addSize([640, 0], [640, 480]).
+        build();
+  
+    googletag.defineSlot('/62616433/main_welcome', [[640, 480], [300, 250]], 'div-gpt-ad-1430160889889-0').defineSizeMapping(mappingWelcome).addService(googletag.pubads());
+  	googletag.pubads().addEventListener('slotRenderEnded', function(event) {
+        if(event.isEmpty === false && searchFor(event.slot, "/62616433/main_welcome") === true) {$('#div-gpt-ad-1430160889889-0').trigger('adready');} 
+    });
+	googletag.pubads().enableSingleRequest();
+    googletag.pubads().collapseEmptyDivs();  
+    googletag.enableServices();
+  });
+
+        </script>
+        <script type='text/javascript'>
+            
+  googletag.cmd.push(function() {
+    googletag.defineOutOfPageSlot('/62616433/main_wallpaper', 'div-gpt-ad-1430235245447-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.pubads().collapseEmptyDivs();
+    googletag.enableServices();
+  });
+
+        </script>
+        <script type='text/javascript'>
+            
+  googletag.cmd.push(function() {
+    googletag.defineOutOfPageSlot('/62616433/main_native_ad_unit_1', 'div-gpt-ad-1441294234226-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.pubads().collapseEmptyDivs();
+    googletag.enableServices();
+  });
+
+        </script>
+        <script>
+            (function(i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r;
+                i[r] = i[r] || function() {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }
+                ,
+                i[r].l = 1 * new Date();
+                a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+                a.async = 1;
+                a.src = g;
+                m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+            ga('create', 'UA-1454132-1', 'auto');
+            ga('require', 'GTM-MMWSMVL');
+            ga('require', 'displayfeatures');
+            ga('set', {
+                'dimension1': 'passives,wearables,tools,passives'
+            });
+            ga('send', 'pageview');
+        </script>
+        <script>
+            !function(f, b, e, v, n, t, s) {
+                if (f.fbq)
+                    return;
+                n = f.fbq = function() {
+                    n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                }
+                ;
+                if (!f._fbq)
+                    f._fbq = n;
+                n.push = n;
+                n.loaded = !0;
+                n.version = '2.0';
+                n.queue = [];
+                t = b.createElement(e);
+                t.async = !0;
+                t.src = v;
+                s = b.getElementsByTagName(e)[0];
+                s.parentNode.insertBefore(t, s)
+            }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+            fbq('init', '1808435332737507');
+            // Insert your pixel ID here.
+            fbq('track', 'PageView');
+            fbq('track', 'ViewContent', {
+                content_ids: ['passives', 'wearables', 'tools', 'passives'],
+                content_type: 'category'
+            });
+        </script>
+        <noscript>
+            <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1808435332737507&ev=PageView&noscript=1"/>
+        </noscript>
+    </head>
+    <body>
+        <div id="top-box" class="hidden-xs">
+            <div class="top-box-wrapper">
+                <div class="container navContainer">
+                    <div class="row">
+                        <div class="social-box col-lg-3 col-md-4 col-sm-5 pull-right" itemscope itemtype="https://schema.org/Organization">
+                            <div class="hidden-print">
+                                <span class="hidden-xs">Connect with us</span>
+                                <link itemprop="url" href="//www.allaboutcircuits.com">
+                                <a href="https://www.facebook.com/allaboutcircuits" itemprop="sameAs" rel="me" target="_blank" class="socialpop" data-content='<iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fallaboutcircuits&width=90&layout=button_count&action=like&show_faces=false&share=false&height=20&appId=421950967965311" width="90" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>'>
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                                <a href="https://twitter.com/AllAboutCircuit" itemprop="sameAs" rel="me" target="_blank" class="socialpop" data-content='<iframe src="https://platform.twitter.com/widgets/follow_button.html?screen_name=allaboutcircuit&show_screen_name=false&show_count=true&size=s" title="Follow All About Circuits on Twitter" width="160" height="25" style="border: 0; overflow: hidden;"></iframe>'>
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                                <a href="https://www.youtube.com/c/AllAboutCircuitsVideo" itemprop="sameAs" rel="me" target="_blank" class="socialpop" data-content='<iframe src="//sub.allaboutcircuits.com/youtube.html" height="25" width="120" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>'>
+                                    <i class="fa fa-youtube-play"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/company/allaboutcircuits" itemprop="sameAs" rel="me" target="_blank" class="socialpop" data-content='<iframe src="//sub.allaboutcircuits.com/linkedin.html" height="20" width="115" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>'>
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <header id="headerProxy">
+            <nav id="main-nav" class="navbar yamm" role="navigation">
+                <div class="container navContainer">
+                    <div class="row">
+                        <div class="navbar-header">
+                            <div class="search-active visible-xs pull-right" itemscope itemtype="https://schema.org/WebSite">
+                                <meta itemprop="url" content="https://www.allaboutcircuits.com/"/>
+                                <form action="/search" method="GET" class="navbar-form navbar-form-mobile navbar-right" itemprop="potentialAction" itemscope itemtype="http://schema.org/SearchAction">
+                                    <a href="#" class="close">×</a>
+                                    <i class="search-icon aaccon-search mobile-search"></i>
+                                    <a href="/">
+                                        <div class="navbar-brand"></div>
+                                    </a>
+                                    <meta itemprop="target" content="https://www.allaboutcircuits.com/search?q={q}"/>
+                                    <input type="text" name="q" value="" class="form-control" placeholder="Search" value="" itemprop="query-input"/>
+                                </form>
+                            </div>
+                            <div class="resp-menu-box pull-right movefront">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                    <img data-cfsrc="/assets/images/mobile-menu-v2.png" class="mobile-menu-icon" style="display:none;visibility:hidden;"/>
+                                    <noscript>
+                                        <img src="/assets/images/mobile-menu-v2.png" class="mobile-menu-icon"/>
+                                    </noscript>
+                                </button>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="user-menu-box pull-right movefront">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#usernavbar" aria-expanded="false" aria-controls="navbar">
+                                    <i class="fa fa-eetech-user"></i>
+                                </button>
+                                <div class="clearfix"></div>
+                            </div>
+                            <a class="navbar-brand" href="/">
+                                <img id="aac-logo-visible-lg" class="navLogo visible-xs visible-md visible-lg" alt="All About Circuits" data-cfsrc="/assets/images/aac_logo.png" style="display:none;visibility:hidden;"/>
+                                <noscript>
+                                    <img id="aac-logo-visible-lg" class="navLogo visible-xs visible-md visible-lg" alt="All About Circuits" src="/assets/images/aac_logo.png"/>
+                                </noscript>
+                                <img id="aac-logo-visible-sm" class="navLogo visible-sm" alt="All About Circuits" data-cfsrc="/assets/images/aac_logo_icon.png" style="display:none;visibility:hidden;"/>
+                                <noscript>
+                                    <img id="aac-logo-visible-sm" class="navLogo visible-sm" alt="All About Circuits" src="/assets/images/aac_logo_icon.png"/>
+                                </noscript>
+                            </a>
+                            <div class="search-active">
+                                <form action="/search" method="GET" id="topsearchform" class="navbar-form navbar-right hidden-xs open open-default small-width">
+                                    <i class="search-icon aaccon-search desktop-search"></i>
+                                    <input name="q" id="q" type="text" class="form-control" placeholder="Search" value="">
+                                </form>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div id="navbar" class=" navbar-collapse collapse">
+                            <ul id="primary-menu" class="nav navbar-nav navbar-right pull-right ">
+                                <li id="articles_menu" class="dropdown yamm-fw">
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                                        ARTICLES <i class="fa fa-chevron-down"></i>
+                                    </a>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <div class="dropdown-content">
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-lg-2 col-md-3 col-sm-3 category-box match-dp-menu">
+                                                        <ul id="articles_list" class="category-menu-filter list-unstyled" itemscope itemtype="https://www.schema.org/SiteNavigationElement">
+                                                            <li id="articles_latest" itemprop="name">
+                                                                <a href="/latest/" itemprop="url">LATEST</a>
+                                                            </li>
+                                                            <li id="articles_news" itemprop="name">
+                                                                <a href="/news/" itemprop="url">NEWS</a>
+                                                            </li>
+                                                            <li id="articles_projects" itemprop="name">
+                                                                <a href="/projects/" itemprop="url">PROJECTS</a>
+                                                            </li>
+                                                            <li id="articles_technical_articles" itemprop="name">
+                                                                <a href="/technical-articles/" itemprop="url">TECHNICAL ARTICLES</a>
+                                                            </li>
+                                                            <li id="articles_industry_articles" itemprop="name">
+                                                                <a href="/industry-articles/" class="text-uppercase" itemprop="url">INDUSTRY ARTICLES</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="menu-articles col-sm-9 col-md-9 col-lg-10 match-dp-menu hidden-xs" id="articles_main"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </ul>
+                                </li>
+                                <li id="forums_menu" class="dropdown yamm-fw">
+                                    <a class="dropdown-toggle dblclick" data-toggle="dropdown" href="//forum.allaboutcircuits.com/" role="button" aria-expanded="false">
+                                        Forum <i class="fa fa-chevron-down"></i>
+                                    </a>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <div class="dropdown-content">
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-lg-2 col-md-3 col-sm-3 category-box match-dp-menu">
+                                                        <ul id="forums_list" class="category-menu-filter list-unstyled" itemscope itemtype="https://www.schema.org/SiteNavigationElement">
+                                                            <li id="forums_all" itemprop="name">
+                                                                <a href="//forum.allaboutcircuits.com/find-new/posts" itemprop="url">LATEST</a>
+                                                            </li>
+                                                            <li id="forums_general" itemprop="name">
+                                                                <a href="//forum.allaboutcircuits.com/#electronics.3" itemprop="url">GENERAL ELECTRONICS</a>
+                                                            </li>
+                                                            <li id="forums_circuits_projects" itemprop="name">
+                                                                <a href="//forum.allaboutcircuits.com/#circuits-and-projects.31" itemprop="url">CIRCUITS &PROJECTS</a>
+                                                            </li>
+                                                            <li id="forums_embedded_software" itemprop="name">
+                                                                <a href="//forum.allaboutcircuits.com/#software-microcomputing.16" itemprop="url">EMBEDDED &MICRO</a>
+                                                            </li>
+                                                            <li id="forums_community" itemprop="name">
+                                                                <a href="//forum.allaboutcircuits.com/#community.20" itemprop="url">COMMUNITY</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="menu-articles col-sm-9 col-md-9 col-lg-10 match-dp-menu hidden-xs" id="forums_main"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </ul>
+                                </li>
+                                <li id="education_menu" class="dropdown yamm-fw">
+                                    <a class="dropdown-toggle dblclick" data-toggle="dropdown" href="https://www.allaboutcircuits.com/education" role="button" aria-expanded="false">
+                                        Education <i class="fa fa-chevron-down"></i>
+                                    </a>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <div class="dropdown-content">
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-lg-2 col-md-3 col-sm-3 category-box match-dp-menu">
+                                                        <ul id="education_list" class="category-menu-filter list-unstyled" itemscope itemtype="https://www.schema.org/SiteNavigationElement">
+                                                            <li id="education_textbook" itemprop="name">
+                                                                <a class="text-uppercase" href="https://www.allaboutcircuits.com/textbook/" itemprop="url">Textbooks</a>
+                                                            </li>
+                                                            <li id="education_video_lectures" itemprop="name">
+                                                                <a class="text-uppercase" href="https://www.allaboutcircuits.com/video-lectures/" itemprop="url">Video Lectures</a>
+                                                            </li>
+                                                            <li id="education_worksheets" itemprop="name">
+                                                                <a class="text-uppercase" href="https://www.allaboutcircuits.com/worksheets/" itemprop="url">Worksheets</a>
+                                                            </li>
+                                                            <li id="education_webinars" itemprop="name">
+                                                                <a class="text-uppercase" href="/industry-webinars/" itemprop="url">Industry Webinars</a>
+                                                            </li>
+                                                            <li id="education_categories" itemprop="name">
+                                                                <a class="text-uppercase" href="https://www.allaboutcircuits.com/education/" itemprop="url">By Category</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div id="education_main" class="menu-articles col-sm-9 col-md-9 col-lg-10 match-dp-menu hidden-xs"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </ul>
+                                </li>
+                                <li id="tools_menu" class="dropdown yamm-fw">
+                                    <a class="dropdown-toggle dblclick" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                                        Tools <i class="fa fa-chevron-down"></i>
+                                    </a>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <div class="dropdown-content">
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-lg-2 col-md-3 col-sm-3 category-box match-dp-menu">
+                                                        <ul id="tools_list" class="category-menu-filter list-unstyled" itemscope itemtype="https://www.schema.org/SiteNavigationElement">
+                                                            <li id="tools_calculators" itemprop="name">
+                                                                <a class="text-uppercase" href="/tools/" itemprop="url">Calculators</a>
+                                                            </li>
+                                                            <li id="tools_part_search" itemprop="name">
+                                                                <a class="text-uppercase" href="/electronic-components/" itemprop="url">Part Search</a>
+                                                            </li>
+                                                            <li id="tools_test_measurement" itemprop="name">
+                                                                <a class="text-uppercase" href="/test-measurement/" itemprop="url">Test Equipment DB</a>
+                                                            </li>
+                                                            <li id="tools_bom" itemprop="name">
+                                                                <a class="text-uppercase" href="/bom/" itemprop="url">BOM Tool</a>
+                                                            </li>
+                                                            <li id="tools_code" itemprop="name">
+                                                                <a class="text-uppercase" href="/code/" itemprop="url">Code Library</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div id="tools_main" class="menu-articles col-sm-9 col-md-9 col-lg-10 match-dp-menu hidden-xs"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </ul>
+                                </li>
+                                <li id="topics_iot_menu" class="cat-menu-item hidden-sm  hidden-md yamm-fw">
+                                    <a href="/test-measurement/" class="dropdown-toggle dblclick nodropdown" data-toggle="dropdown" role="button" aria-expanded="false">
+                                        Test Db <img data-cfsrc="/assets/images/beta.png" class="beta-search hidden-xs" alt="Test & Measurement Db Beta" style="display:none;visibility:hidden;">
+                                        <noscript>
+                                            <img src="/assets/images/beta.png" class="beta-search hidden-xs" alt="Test & Measurement Db Beta">
+                                        </noscript>
+                                    </a>
+                                </li>
+                                <li id="topics_part_search_menu" class="cat-menu-item hidden-sm yamm-fw">
+                                    <a href="/electronic-components/" class="dropdown-toggle dblclick nodropdown" data-toggle="dropdown" role="button" aria-expanded="false" title="Electronics Part Search">Part Search</a>
+                                </li>
+                                <li id="topics_giveaways_menu" class="cat-menu-item yamm-fw hidden-sm hidden-md">
+                                    <a href="/giveaways/" class="dropdown-toggle dblclick nodropdown" data-toggle="dropdown" role="button" aria-expanded="false">Giveaways</a>
+                                </li>
+                                <li class="login-menu-item dropdown hidden-xs">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">LOG IN / JOIN</a>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li>
+                                            <a href="/login/" title="Login to your existing account">Log In</a>
+                                        </li>
+                                        <li>
+                                            <a href="//forum.allaboutcircuits.com/register" title="Create an account">Join AAC</a>
+                                        </li>
+                                        <li>
+                                            <a href="/login/" title="Sign in with your Facebook, Linkedin or Google account">
+                                                Sign in with <i class="fa fa-facebook"></i>
+                                                <i class="fa fa-linkedin"></i>
+                                                <i class="fa fa-google-plus"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="//forum.allaboutcircuits.com/register">Member Benefits</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="usernavbar" class="navbar-collapse collapse">
+                            <ul id="primary-menu" class="nav navbar-nav visible-xs navbar-right pull-right">
+                                <li>
+                                    <a href="/login/">Log In</a>
+                                </li>
+                                <li>
+                                    <a href="//forum.allaboutcircuits.com/register">Join AAC</a>
+                                </li>
+                                <li>
+                                    <a href="/login/">
+                                        Sign in with &nbsp;<i class="fa fa-facebook"></i>
+                                        &nbsp;<i class="fa fa-linkedin"></i>
+                                        &nbsp;<i class="fa fa-google-plus"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="//forum.allaboutcircuits.com/register">Member Benefits</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="clearfix"></div>
+        </header>
+        <main class="row-offcanvas row-offcanvas-right">
+            <section class="single-post">
+                <div class="container">
+                    <div class="row rowtable">
+                        <div class="col-lg-9 col-md-8 col-sm-12 main-content block-1" data-mh="block-1">
+                            <div class="breadcrumb-wrap hidden-xs">
+                                <ol class="breadcrumb">
+                                    <li itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+                                        <a href="/" itemprop="url">
+                                            <span itemprop="title">
+                                                <i class="fa fa-home"></i>
+                                                Home
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+                                        <a href="/tools/" itemprop="url">
+                                            <span itemprop="title">Tools</span>
+                                        </a>
+                                    </li>
+                                    <li itemscope itemtype="http://data-vocabulary.org/Breadcrumb" class="active">
+                                        <meta itemprop="url" content="https://www.allaboutcircuits.com/tools/resistor-color-code-calculator/"/>
+                                        <span itemprop="title">Resistor Color Code Calculator</span>
+                                    </li>
+                                </ol>
+                            </div>
+                            <article>
+                                <div class="hidden-lg hidden-md col-xs-12 sidebar-link text-right no-padding sidebarDrawer">
+                                    <a href="#" data-toggle="offcanvas">
+                                        Related Tools &nbsp;<i class="fa fa-chevron-right"></i>
+                                    </a>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="page-header">
+                                    <h1 itemprop="headline">Resistor Color Code Calculator</h1>
+                                </div>
+                                <hr>
+                                <div itemprop="articleBody" class="sp-content-block toolpage">
+                                    <div id='div-gpt-ad-1430160961981-0' class="leaderboard_ad">
+                                        <script type='text/javascript'>
+                                            
+		googletag.cmd.push(function() {googletag.display('div-gpt-ad-1430160961981-0');});
+	
+                                        </script>
+                                    </div>
+                                    <p class="lead">A handy tool for reading resistor color code values</p>
+                                    <p>
+                                        <style type="text/css">
+                                            #strip41,#strip42,#strip43 {
+                                                height: 66px;
+                                                top: 7px;
+                                                width: 20px
+                                            }
+
+                                            #strip51,#strip61 {
+                                                left: 80px
+                                            }
+
+                                            #strip41,#strip52,#strip62 {
+                                                left: 129px
+                                            }
+
+                                            #strip44,#strip55,#strip66 {
+                                                left: 314px
+                                            }
+
+                                            .resistor_strip4,.resistor_strip5,.resistor_strip6 {
+                                                background-color: red;
+                                                position: absolute;
+                                                z-index: 2
+                                            }
+
+                                            .colored-box,.resistor_strip4,.resistor_strip5,.resistor_strip6 {
+                                                border-color: #000;
+                                                border-style: solid;
+                                                border-width: 1px
+                                            }
+
+                                            .bold-header,.colored-box {
+                                                line-height: 200%;
+                                                text-align: center
+                                            }
+
+                                            .stripimg {
+                                                min-width: 417px;
+                                                margin-left: 0!important
+                                            }
+
+                                            #strip42 {
+                                                left: 181px
+                                            }
+
+                                            #strip43 {
+                                                left: 233px
+                                            }
+
+                                            #strip44 {
+                                                height: 78px;
+                                                top: 1px;
+                                                width: 20px
+                                            }
+
+                                            .resistor_strip4 {
+                                                height: 20px;
+                                                width: 20px
+                                            }
+
+                                            #strip52,#strip53,#strip54 {
+                                                height: 66px;
+                                                top: 7px
+                                            }
+
+                                            #strip51,#strip55 {
+                                                height: 78px;
+                                                top: 1px
+                                            }
+
+                                            @media (max-width: 320px) {
+                                                .toolfont {
+                                                    font-size:12px
+                                                }
+
+                                                .stripimg {
+                                                    min-width: 320px;
+                                                    max-width: 320px
+                                                }
+
+                                                #strip41,#strip42,#strip43 {
+                                                    height: 54px;
+                                                    top: 3px;
+                                                    width: 15px
+                                                }
+
+                                                #strip41 {
+                                                    left: 99px
+                                                }
+
+                                                #strip42 {
+                                                    left: 139px
+                                                }
+
+                                                #strip43 {
+                                                    left: 179px
+                                                }
+
+                                                #strip44 {
+                                                    height: 60px;
+                                                    left: 244px;
+                                                    top: 1px;
+                                                    width: 15px
+                                                }
+                                            }
+
+                                            #strip51,#strip52 {
+                                                width: 20px
+                                            }
+
+                                            #strip53 {
+                                                left: 181px;
+                                                width: 20px
+                                            }
+
+                                            #strip54 {
+                                                left: 233px;
+                                                width: 20px
+                                            }
+
+                                            #strip55 {
+                                                width: 20px
+                                            }
+
+                                            .resistor_strip5 {
+                                                height: 20px;
+                                                width: 20px
+                                            }
+
+                                            #strip62,#strip63,#strip64,#strip65 {
+                                                height: 66px;
+                                                top: 7px
+                                            }
+
+                                            #strip61,#strip66 {
+                                                height: 78px;
+                                                top: 1px
+                                            }
+
+                                            @media (max-width: 320px) {
+                                                #strip52,#strip53,#strip54 {
+                                                    height:54px;
+                                                    top: 3px
+                                                }
+
+                                                #strip51,#strip55 {
+                                                    height: 60px;
+                                                    top: 1px;
+                                                    width: 15px
+                                                }
+
+                                                #strip51 {
+                                                    left: 65px
+                                                }
+
+                                                #strip52 {
+                                                    left: 99px;
+                                                    width: 15px
+                                                }
+
+                                                #strip53 {
+                                                    left: 139px;
+                                                    width: 15px
+                                                }
+
+                                                #strip54 {
+                                                    left: 179px;
+                                                    width: 15px
+                                                }
+
+                                                #strip55 {
+                                                    left: 244px
+                                                }
+                                            }
+
+                                            #strip61,#strip62,#strip63,#strip64,#strip65,#strip66 {
+                                                width: 20px
+                                            }
+
+                                            #strip63 {
+                                                left: 159px
+                                            }
+
+                                            #strip64 {
+                                                left: 189px
+                                            }
+
+                                            #strip65 {
+                                                left: 270px
+                                            }
+
+                                            .resistor_strip6 {
+                                                height: 20px;
+                                                width: 20px
+                                            }
+
+                                            .black,.colored-box {
+                                                background-color: #262323
+                                            }
+
+                                            @media (max-width: 320px) {
+                                                #strip62,#strip63,#strip64,#strip65 {
+                                                    height:54px;
+                                                    top: 3px
+                                                }
+
+                                                #strip61,#strip66 {
+                                                    height: 60px;
+                                                    top: 1px;
+                                                    width: 15px
+                                                }
+
+                                                #strip61,#strip62,#strip63,#strip64,#strip65,#strip66 {
+                                                    width: 15px
+                                                }
+
+                                                #strip61 {
+                                                    left: 65px
+                                                }
+
+                                                #strip62 {
+                                                    left: 99px
+                                                }
+
+                                                #strip63 {
+                                                    left: 129px
+                                                }
+
+                                                #strip64 {
+                                                    left: 159px
+                                                }
+
+                                                #strip65 {
+                                                    left: 209px
+                                                }
+
+                                                #strip66 {
+                                                    left: 244px
+                                                }
+                                            }
+
+                                            #wrapper {
+                                                position: relative
+                                            }
+
+                                            .colored-box {
+                                                color: #fff;
+                                                height: 100%;
+                                                margin-left: 5px;
+                                                width: 100%;
+                                                cursor: pointer
+                                            }
+
+                                            .bold-header {
+                                                color: #000;
+                                                font-size: 85%;
+                                                font-weight: 700;
+                                                height: 20px;
+                                                margin-left: 2px;
+                                                width: 55px
+                                            }
+
+                                            .black,.brown,.orange,.red {
+                                                color: #FFF
+                                            }
+
+                                            .brown {
+                                                background-color: #7D4302
+                                            }
+
+                                            .red {
+                                                background-color: #E60514
+                                            }
+
+                                            .orange {
+                                                background-color: #f26b31
+                                            }
+
+                                            .yellow {
+                                                background-color: #F2EA7C;
+                                                color: #000
+                                            }
+
+                                            .blue,.green,.grey,.purple {
+                                                color: #FFF
+                                            }
+
+                                            .green {
+                                                background-color: #3CB057
+                                            }
+
+                                            .blue {
+                                                background-color: #0483DE
+                                            }
+
+                                            .purple {
+                                                background-color: #9D2CA3
+                                            }
+
+                                            .grey {
+                                                background-color: #595759
+                                            }
+
+                                            .gold,.silver,.white {
+                                                color: #000
+                                            }
+
+                                            .white {
+                                                background-color: #FFF
+                                            }
+
+                                            .gold {
+                                                background-color: #D4AF37
+                                            }
+
+                                            .silver {
+                                                background-color: silver
+                                            }
+                                        </style>
+                                    <div class="container-fluid">
+                                        <ul class="nav nav-tabs toolfont" role="tablist" id="list">
+                                            <li class="active">
+                                                <a href="#strip4tab" role="tab" data-toggle="tab">4-strip</a>
+                                            </li>
+                                            <li>
+                                                <a href="#strip5tab" role="tab" data-toggle="tab">5-strip</a>
+                                            </li>
+                                            <li>
+                                                <a href="#strip6tab" role="tab" data-toggle="tab">6-strip</a>
+                                            </li>
+                                        </ul>
+                                        <div class="tab-content">
+                                            <div class="tab-pane fade active in" id="strip4tab">
+                                                <h3 class="inputHL">4 strip Resistor</h3>
+                                                <div id="wrapper">
+                                                    <div class="row-fluid">
+                                                        <img data-cfsrc="/uploads/articles/resistor-color-code-body-v10.png" class="stripimg" style="display:none;visibility:hidden;"/>
+                                                        <noscript>
+                                                            <img src="/uploads/articles/resistor-color-code-body-v10.png" class="stripimg"/>
+                                                        </noscript>
+                                                        <div id="strip41" class="resistor_strip4" data-val="9" style="background: rgb(255, 255, 255);"></div>
+                                                        <div id="strip42" class="resistor_strip4" data-val="6" style="background: rgb(4, 131, 222);"></div>
+                                                        <div id="strip43" class="resistor_strip4" data-val="÷100" style="background: rgb(192, 192, 192);"></div>
+                                                        <div id="strip44" class="resistor_strip4" data-val="± 5%" style="background: rgb(212, 175, 55);"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="row visible-lg">
+                                                    <div class="col-sm-12">
+                                                        <div class="col-sm-1 col-lg-3">
+                                                            <span class="bold-header">1st Digit</span>
+                                                        </div>
+                                                        <div class="col-sm-1 col-lg-3">
+                                                            <span class="bold-header">2nd Digit</span>
+                                                        </div>
+                                                        <div class="col-sm-1 col-lg-3">
+                                                            <span class="bold-header">Multiplier</span>
+                                                        </div>
+                                                        <div class="col-sm-1 col-lg-3">
+                                                            <span class="bold-header">Tolerance</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-sm-12">
+                                                        <div class="col-sm-6 col-lg-3">
+                                                            <div class="form-group">
+                                                                <label for="b4d1" class="hidden-lg">1st Digit</label>
+                                                                <select class="form-control digit-picker white" id="b4d1">
+                                                                    <option class="brown" value="1">1 Brown</option>
+                                                                    <option class="red" value="2">2 RED</option>
+                                                                    <option class="orange" value="3">3 Orange</option>
+                                                                    <option class="yellow" value="4">4 Yellow</option>
+                                                                    <option class="green" value="5">5 Green</option>
+                                                                    <option class="blue" value="6">6 Blue</option>
+                                                                    <option class="purple" value="7">7 Violet</option>
+                                                                    <option class="grey" value="8">8 Gray</option>
+                                                                    <option class="white" value="9" selected>9 White</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-6 col-lg-3">
+                                                            <div class="form-group">
+                                                                <label for="b4d2" class="hidden-lg">2nd Digit</label>
+                                                                <select class="form-control digit-picker blue" id="b4d2">
+                                                                    <option class="black" value="0">0 Black</option>
+                                                                    <option class="brown" value="1">1 Brown</option>
+                                                                    <option class="red" value="2">2 RED</option>
+                                                                    <option class="orange" value="3">3 Orange</option>
+                                                                    <option class="yellow" value="4">4 Yellow</option>
+                                                                    <option class="green" value="5">5 Green</option>
+                                                                    <option class="blue" value="6" selected>6 Blue</option>
+                                                                    <option class="purple" value="7">7 Violet</option>
+                                                                    <option class="grey" value="8">8 Gray</option>
+                                                                    <option class="white" value="9">9 White</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-6 col-lg-3">
+                                                            <div class="form-group">
+                                                                <label for="b4d3" class="hidden-lg">Multiplier</label>
+                                                                <select class="form-control digit-picker silver" id="b4d3">
+                                                                    <option class="black" value="x1">x1 Black</option>
+                                                                    <option class="brown" value="x10">x10 Brown</option>
+                                                                    <option class="red" value="x100">x100 Red</option>
+                                                                    <option class="orange" value="x1k">x1k Orange</option>
+                                                                    <option class="yellow" value="x10k">x10k Yellow</option>
+                                                                    <option class="green" value="x100k">x100k Green</option>
+                                                                    <option class="blue" value="x1M">x1M Blue</option>
+                                                                    <option class="purple" value="x10M">x10M Violet</option>
+                                                                    <option class="grey" value="x100M">x100M Gray</option>
+                                                                    <option class="white" value="x1G">x1G White</option>
+                                                                    <option class="gold" value="÷10">÷10 Gold</option>
+                                                                    <option class="silver" value="÷100" selected>÷100 Silver</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-6 col-lg-3">
+                                                            <div class="form-group">
+                                                                <label for="b4d4" class="hidden-lg">Tolerance</label>
+                                                                <select class="form-control digit-picker gold" id="b4d4">
+                                                                    <option class="brown" value="± 1%">± 1% Brown</option>
+                                                                    <option class="red" value="± 2%">± 2% Red</option>
+                                                                    <option class="orange" value="± 3%">± 3% Orange</option>
+                                                                    <option class="yellow" value="± 4%">± 4% Yellow</option>
+                                                                    <option class="green" value="± 0.5%">± 0.5% Green</option>
+                                                                    <option class="blue" value="± 0.25%">± 0.25% Blue</option>
+                                                                    <option class="purple" value="± 0.10%">± 0.10% Violet</option>
+                                                                    <option class="grey" value="± 0.05%">± 0.05% Gray</option>
+                                                                    <option class="gold" value="± 5%" selected>± 5% Gold</option>
+                                                                    <option class="silver" value="± 10%">± 10% Silver</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <div class="row clearfix">
+                                                    <div class="col-sm-12">
+                                                        <div class="col-sm-2 col-xs-12">
+                                                            <div class="form-group text-left">
+                                                                <label for="b4tool_output1">Resistance:</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-4 col-xs-8">
+                                                            <div id="tool_output_container" class="form-group">
+                                                                <input type="text" id="b4tool_output1" class="form-control" placeholder="Resistance">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-4 col-xs-4">
+                                                            <div class="form-group text-left">ohms</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row clearfix">
+                                                    <div class="col-sm-12">
+                                                        <div class="col-sm-2 col-xs-12">
+                                                            <div class="form-group text-left">
+                                                                <label for="b4tool_output2">Tolerance:&nbsp;</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-4 col-xs-8">
+                                                            <div id="tool_output_container" class="form-group">
+                                                                <input type="text" id="b4tool_output2" class="form-control" placeholder="Tolerance">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-4 col-xs-4">
+                                                            <div class="form-group ">&nbsp;</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row clearfix">
+                                                    <div class="col-sm-12">
+                                                        <div class="col-sm-2 col-xs-12">
+                                                            <div class="form-group text-left">
+                                                                <label for="b4tool_output3">Minimum:</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-4 col-xs-8">
+                                                            <div id="tool_output_container" class="form-group">
+                                                                <input type="text" id="b4tool_output3" class="form-control" placeholder="Minimum">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-4 col-xs-4">
+                                                            <div class="form-group text-left">ohms</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row clearfix">
+                                                    <div class="col-sm-12">
+                                                        <div class="col-sm-2 col-xs-12">
+                                                            <div class="form-group text-left">
+                                                                <label for="b4tool_output4">Maximum:</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-4 col-xs-8">
+                                                            <div id="tool_output_container" class="form-group">
+                                                                <input type="text" id="b4tool_output4" class="form-control" placeholder="Maximum">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-4 col-xs-4">
+                                                            <div class="form-group text-left">ohms</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="strip5tab">
+                                                <h3 class="inputHL">5 strip Resistor</h3>
+                                                <div id="wrapper">
+                                                    <div class="row-fluid">
+                                                        <img data-cfsrc="/uploads/articles/resistor-color-code-body-v10.png" class="stripimg" style="display:none;visibility:hidden;"/>
+                                                        <noscript>
+                                                            <img src="/uploads/articles/resistor-color-code-body-v10.png" class="stripimg"/>
+                                                        </noscript>
+                                                        <div id="strip51" class="resistor_strip5" data-val="5" style="background-color: #3CB057;"></div>
+                                                        <div id="strip52" class="resistor_strip5" data-val="5" style="background-color: #3CB057;"></div>
+                                                        <div id="strip53" class="resistor_strip5" data-val="6" style="background-color: #0483DE;"></div>
+                                                        <div id="strip54" class="resistor_strip5" data-val="x100" style="background-color: #E60514;"></div>
+                                                        <div id="strip55" class="resistor_strip5" data-val="± 10%" style="background-color: #C0C0C0;"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="row visible-lg">
+                                                    <div class="col-sm-12">
+                                                        <div class="col-sm-1 col-lg-2">
+                                                            <span class="bold-header">1st Digit</span>
+                                                        </div>
+                                                        <div class="col-sm-1 col-lg-2">
+                                                            <span class="bold-header">2nd Digit</span>
+                                                        </div>
+                                                        <div class="col-sm-1 col-lg-2">
+                                                            <span class="bold-header">3rd Digit</span>
+                                                        </div>
+                                                        <div class="col-sm-1 col-lg-2">
+                                                            <span class="bold-header">Multiplier</span>
+                                                        </div>
+                                                        <div class="col-sm-1 col-lg-2">
+                                                            <span class="bold-header">Tolerance</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-sm-12">
+                                                        <div class="col-sm-6 col-lg-2">
+                                                            <div class="form-group">
+                                                                <label for="b5d1" class="hidden-lg">1st Digit</label>
+                                                                <select class="form-control digit-picker green" id="b5d1">
+                                                                    <option class="brown" value="1">1 Brown</option>
+                                                                    <option class="red" value="2">2 RED</option>
+                                                                    <option class="orange" value="3">3 Orange</option>
+                                                                    <option class="yellow" value="4">4 Yellow</option>
+                                                                    <option class="green" value="5" selected>5 Green</option>
+                                                                    <option class="blue" value="6">6 Blue</option>
+                                                                    <option class="purple" value="7">7 Violet</option>
+                                                                    <option class="grey" value="8">8 Gray</option>
+                                                                    <option class="white" value="9">9 White</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-6 col-lg-2">
+                                                            <div class="form-group">
+                                                                <label for="b5d2" class="hidden-lg">2nd Digit</label>
+                                                                <select class="form-control digit-picker green" id="b5d2">
+                                                                    <option class="black" value="0">0 Black</option>
+                                                                    <option class="brown" value="1">1 Brown</option>
+                                                                    <option class="red" value="2">2 RED</option>
+                                                                    <option class="orange" value="3">3 Orange</option>
+                                                                    <option class="yellow" value="4">4 Yellow</option>
+                                                                    <option class="green" value="5" selected>5 Green</option>
+                                                                    <option class="blue" value="6">6 Blue</option>
+                                                                    <option class="purple" value="7">7 Violet</option>
+                                                                    <option class="grey" value="8">8 Gray</option>
+                                                                    <option class="white" value="9">9 White</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-6 col-lg-2">
+                                                            <div class="form-group">
+                                                                <label for="b5d3" class="hidden-lg">3rd Digit</label>
+                                                                <select class="form-control digit-picker blue" id="b5d3">
+                                                                    <option class="black" value="0">0 Black</option>
+                                                                    <option class="brown" value="1">1 Brown</option>
+                                                                    <option class="red" value="2">2 RED</option>
+                                                                    <option class="orange" value="3">3 Orange</option>
+                                                                    <option class="yellow" value="4">4 Yellow</option>
+                                                                    <option class="green" value="5">5 Green</option>
+                                                                    <option class="blue" value="6" selected>6 Blue</option>
+                                                                    <option class="purple" value="7">7 Violet</option>
+                                                                    <option class="grey" value="8">8 Gray</option>
+                                                                    <option class="white" value="9">9 White</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-6 col-lg-2">
+                                                            <div class="form-group">
+                                                                <label for="b5d4" class="hidden-lg">Multiplier</label>
+                                                                <select class="form-control digit-picker red" id="b5d4">
+                                                                    <option class="black" value="x1">x1 Black</option>
+                                                                    <option class="brown" value="x10">x10 Brown</option>
+                                                                    <option class="red" value="x100" selected>x100 Red</option>
+                                                                    <option class="orange" value="x1k">x1k Orange</option>
+                                                                    <option class="yellow" value="x10k">x10k Yellow</option>
+                                                                    <option class="green" value="x100k">x100k Green</option>
+                                                                    <option class="blue" value="x1M">x1M Blue</option>
+                                                                    <option class="purple" value="x10M">x10M Violet</option>
+                                                                    <option class="grey" value="x100M">x100M Gray</option>
+                                                                    <option class="white" value="x1G">x1G White</option>
+                                                                    <option class="gold" value="÷10">÷10 Gold</option>
+                                                                    <option class="silver" value="÷100">÷100 Silver</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-6 col-lg-2">
+                                                            <div class="form-group">
+                                                                <label for="b5d5" class="hidden-lg">Tolerance</label>
+                                                                <select class="form-control digit-picker silver" id="b5d5">
+                                                                    <option class="brown" value="± 1%">± 1% Brown</option>
+                                                                    <option class="red" value="± 2%">± 2% Red</option>
+                                                                    <option class="orange" value="± 3%">± 3% Orange</option>
+                                                                    <option class="yellow" value="± 4%">± 4% Yellow</option>
+                                                                    <option class="green" value="± 0.5%">± 0.5% Green</option>
+                                                                    <option class="blue" value="± 0.25%">± 0.25% Blue</option>
+                                                                    <option class="purple" value="± 0.10%">± 0.10% Violet</option>
+                                                                    <option class="grey" value="± 0.05%">± 0.05% Gray</option>
+                                                                    <option class="gold" value="± 5%">± 5% Gold</option>
+                                                                    <option class="silver" value="± 10%" selected>± 10% Silver</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <div class="row clearfix">
+                                                    <div class="col-sm-12">
+                                                        <div class="col-sm-2 col-xs-12">
+                                                            <div class="form-group text-left">
+                                                                <label for="b5tool_output1">Resistance:</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-4 col-xs-8">
+                                                            <div id="tool_output_container" class="form-group">
+                                                                <input type="text" id="b5tool_output1" class="form-control" placeholder="Resistance">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-4 col-xs-4">
+                                                            <div class="form-group text-left">ohms</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row clearfix">
+                                                    <div class="col-sm-12">
+                                                        <div class="col-sm-2 col-xs-12">
+                                                            <div class="form-group text-left">
+                                                                <label for="b5tool_output2">Tolerance:</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-4 col-xs-8">
+                                                            <div id="tool_output_container" class="form-group">
+                                                                <input type="text" id="b5tool_output2" class="form-control" placeholder="Tolerance">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-4 col-xs-4">
+                                                            <div class="form-group ">&nbsp;</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row clearfix">
+                                                    <div class="col-sm-12">
+                                                        <div class="col-sm-2 col-xs-12">
+                                                            <div class="form-group text-left">
+                                                                <label for="b5tool_output3">Minimum:</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-4 col-xs-8">
+                                                            <div id="tool_output_container" class="form-group">
+                                                                <input type="text" id="b5tool_output3" class="form-control" placeholder="Minimum">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-4 col-xs-4">
+                                                            <div class="form-group text-left">ohms</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row clearfix">
+                                                    <div class="col-sm-12">
+                                                        <div class="col-sm-2 col-xs-12">
+                                                            <div class="form-group text-left">
+                                                                <label for="b5tool_output4">Maximum:</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-4 col-xs-8">
+                                                            <div id="tool_output_container" class="form-group">
+                                                                <input type="text" id="b5tool_output4" class="form-control" placeholder="Maximum">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-4 col-xs-4">
+                                                            <div class="form-group text-left">ohms</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Tab 2 -->
+                                            <!-- Start Tab 3 -->
+                                            <div class="tab-pane fade" id="strip6tab">
+                                                <h3 class="inputHL">6 strip Resistor</h3>
+                                                <div id="wrapper">
+                                                    <div class="row-fluid">
+                                                        <img data-cfsrc="/uploads/articles/resistor-color-code-body-v10.png" class="stripimg" style="display:none;visibility:hidden;"/>
+                                                        <noscript>
+                                                            <img src="/uploads/articles/resistor-color-code-body-v10.png" class="stripimg"/>
+                                                        </noscript>
+                                                        <div id="strip61" class="resistor_strip6" data-val="5" style="background-color: #3CB057;"></div>
+                                                        <div id="strip62" class="resistor_strip6" data-val="5" style="background-color: #3CB057;"></div>
+                                                        <div id="strip63" class="resistor_strip6" data-val="6" style="background-color: #0483DE;"></div>
+                                                        <div id="strip64" class="resistor_strip6" data-val="x100" style="background-color: #E60514;"></div>
+                                                        <div id="strip65" class="resistor_strip6" data-val="± 10%" style="background-color: #C0C0C0;"></div>
+                                                        <div id="strip66" class="resistor_strip6" data-val="100" style="background-color: #7D4302;"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="row visible-lg">
+                                                    <div class="col-sm-12">
+                                                        <div class="col-sm-1 col-lg-2">
+                                                            <span class="bold-header">1st Digit</span>
+                                                        </div>
+                                                        <div class="col-sm-1 col-lg-2">
+                                                            <span class="bold-header">2nd Digit</span>
+                                                        </div>
+                                                        <div class="col-sm-1 col-lg-2">
+                                                            <span class="bold-header">3rd Digit</span>
+                                                        </div>
+                                                        <div class="col-sm-1 col-lg-2">
+                                                            <span class="bold-header">Multiplier</span>
+                                                        </div>
+                                                        <div class="col-sm-1 col-lg-2">
+                                                            <span class="bold-header">Tolerance</span>
+                                                        </div>
+                                                        <div class="col-sm-1 col-lg-2">
+                                                            <span class="bold-header">Tempco</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-sm-12">
+                                                        <div class="col-sm-6 col-lg-2">
+                                                            <div class="form-group">
+                                                                <label for="b6d1" class="hidden-lg">1st Digit</label>
+                                                                <select class="form-control digit-picker green" id="b6d1">
+                                                                    <option class="brown" value="1">1 Brown</option>
+                                                                    <option class="red" value="2">2 RED</option>
+                                                                    <option class="orange" value="3">3 Orange</option>
+                                                                    <option class="yellow" value="4">4 Yellow</option>
+                                                                    <option class="green" value="5" selected>5 Green</option>
+                                                                    <option class="blue" value="6">6 Blue</option>
+                                                                    <option class="purple" value="7">7 Violet</option>
+                                                                    <option class="grey" value="8">8 Gray</option>
+                                                                    <option class="white" value="9">9 White</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-6 col-lg-2">
+                                                            <div class="form-group">
+                                                                <label for="b6d2" class="hidden-lg">2nd Digit</label>
+                                                                <select class="form-control digit-picker green" id="b6d2">
+                                                                    <option class="black" value="0">0 Black</option>
+                                                                    <option class="brown" value="1">1 Brown</option>
+                                                                    <option class="red" value="2">2 RED</option>
+                                                                    <option class="orange" value="3">3 Orange</option>
+                                                                    <option class="yellow" value="4">4 Yellow</option>
+                                                                    <option class="green" value="5" selected>5 Green</option>
+                                                                    <option class="blue" value="6">6 Blue</option>
+                                                                    <option class="purple" value="7">7 Violet</option>
+                                                                    <option class="grey" value="8">8 Gray</option>
+                                                                    <option class="white" value="9">9 White</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-6 col-lg-2">
+                                                            <div class="form-group">
+                                                                <label for="b6d3" class="hidden-lg">3rd Digit</label>
+                                                                <select class="form-control digit-picker blue" id="b6d3">
+                                                                    <option class="black" value="0">0 Black</option>
+                                                                    <option class="brown" value="1">1 Brown</option>
+                                                                    <option class="red" value="2">2 RED</option>
+                                                                    <option class="orange" value="3">3 Orange</option>
+                                                                    <option class="yellow" value="4">4 Yellow</option>
+                                                                    <option class="green" value="5">5 Green</option>
+                                                                    <option class="blue" value="6" selected>6 Blue</option>
+                                                                    <option class="purple" value="7">7 Violet</option>
+                                                                    <option class="grey" value="8">8 Gray</option>
+                                                                    <option class="white" value="9">9 White</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-6 col-lg-2">
+                                                            <div class="form-group">
+                                                                <label for="b6d4" class="hidden-lg">Multiplier</label>
+                                                                <select class="form-control digit-picker red" id="b6d4">
+                                                                    <option class="black" value="x1">x1 Black</option>
+                                                                    <option class="brown" value="x10">x10 Brown</option>
+                                                                    <option class="red" value="x100" selected>x100 Red</option>
+                                                                    <option class="orange" value="x1k">x1k Orange</option>
+                                                                    <option class="yellow" value="x10k">x10k Yellow</option>
+                                                                    <option class="green" value="x100k">x100k Green</option>
+                                                                    <option class="blue" value="x1M">x1M Blue</option>
+                                                                    <option class="purple" value="x10M">x10M Violet</option>
+                                                                    <option class="grey" value="x100M">x100M Gray</option>
+                                                                    <option class="white" value="x1G">x1G White</option>
+                                                                    <option class="gold" value="÷10">÷10 Gold</option>
+                                                                    <option class="silver" value="÷100">÷100 Silver</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-6 col-lg-2">
+                                                            <div class="form-group">
+                                                                <label for="b6d5" class="hidden-lg">Tolerance</label>
+                                                                <select class="form-control digit-picker silver" id="b6d5">
+                                                                    <option class="brown" value="± 1%">± 1% Brown</option>
+                                                                    <option class="red" value="± 2%">± 2% Red</option>
+                                                                    <option class="orange" value="± 3%">± 3% Orange</option>
+                                                                    <option class="yellow" value="± 4%">± 4% Yellow</option>
+                                                                    <option class="green" value="± 0.5%">± 0.5% Green</option>
+                                                                    <option class="blue" value="± 0.25%">± 0.25% Blue</option>
+                                                                    <option class="purple" value="± 0.10%">± 0.10% Violet</option>
+                                                                    <option class="grey" value="± 0.05%">± 0.05% Gray</option>
+                                                                    <option class="gold" value="± 5%">± 5% Gold</option>
+                                                                    <option class="silver" value="± 10%" selected>± 10% Silver</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-6 col-lg-2">
+                                                            <div class="form-group">
+                                                                <label for="b6d6" class="hidden-lg">Tempco</label>
+                                                                <select class="form-control digit-picker brown" id="b6d6">
+                                                                    <option class="brown" value="100" selected="">100 Brown</option>
+                                                                    <option class="red" value="50">50 Red</option>
+                                                                    <option class="orange" value="15">15 Orange</option>
+                                                                    <option class="yellow" value="25">25 Yellow</option>
+                                                                    <option class="blue" value="10">10 Blue</option>
+                                                                    <option class="purple" value="5">5 Violet</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <div class="row clearfix">
+                                                    <div class="col-sm-12">
+                                                        <div class="col-sm-2 col-xs-12">
+                                                            <div class="form-group text-left">
+                                                                <label for="b6tool_output1">Resistance:</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-4 col-xs-8">
+                                                            <div id="tool_output_container" class="form-group">
+                                                                <input type="text" id="b6tool_output1" class="form-control" placeholder="Resistance">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-4 col-xs-4">
+                                                            <div class="form-group text-left">ohms</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row clearfix">
+                                                    <div class="col-sm-12">
+                                                        <div class="col-sm-2 col-xs-12">
+                                                            <div class="form-group text-left">
+                                                                <label for="b6tool_output2">Tolerance:</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-4 col-xs-8">
+                                                            <div id="tool_output_container" class="form-group">
+                                                                <input type="text" id="b6tool_output2" class="form-control" placeholder="Tolerance">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-4 col-xs-4">
+                                                            <div class="form-group ">&nbsp;</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row clearfix">
+                                                    <div class="col-sm-12">
+                                                        <div class="col-sm-2 col-xs-12">
+                                                            <div class="form-group text-left">
+                                                                <label for="b6tool_output3">Minimum:</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-4 col-xs-8">
+                                                            <div id="tool_output_container" class="form-group">
+                                                                <input type="text" id="b6tool_output3" class="form-control" placeholder="Minimum">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-4 col-xs-4">
+                                                            <div class="form-group text-left">ohms</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row clearfix">
+                                                    <div class="col-sm-12">
+                                                        <div class="col-sm-2 col-xs-12">
+                                                            <div class="form-group text-left">
+                                                                <label for="b6tool_output4">Maximum:</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-4 col-xs-8">
+                                                            <div id="tool_output_container" class="form-group">
+                                                                <input type="text" id="b6tool_output4" class="form-control" placeholder="Maximum">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-4 col-xs-4">
+                                                            <div class="form-group text-left">ohms</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row clearfix">
+                                                    <div class="col-sm-12">
+                                                        <div class="col-sm-2 col-xs-12">
+                                                            <div class="form-group text-left">
+                                                                <label for="b6tool_output5">Tempco:</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-4 col-xs-8">
+                                                            <div id="tool_output_container" class="form-group">
+                                                                <input type="text" id="b6tool_output5" class="form-control" placeholder="Tolerance">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-4 col-xs-4">
+                                                            <div class="form-group text-left">ppm/°C</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Tab 3 -->
+                                        </div>
+                                    </div>
+                                    <script type="text/javascript">
+                                        
+var _0x35c4=["\x75\x73\x65\x20\x73\x74\x72\x69\x63\x74","\x73\x75\x62\x73\x74\x72","\x64\x61\x74\x61\x2D\x76\x61\x6C","\x61\x74\x74\x72","\x23\x73\x74\x72\x69\x70","\x70\x75\x73\x68","\x78","\x6D\x61\x74\x63\x68","\x6C\x65\x6E\x67\x74\x68","\x6B","\x4D","\x47","\x76\x61\x6C","\x23\x62","\x74\x6F\x6F\x6C\x5F\x6F\x75\x74\x70\x75\x74\x32","\x23\x73\x74\x72\x69\x70\x36\x36","\x23\x62\x36\x74\x6F\x6F\x6C\x5F\x6F\x75\x74\x70\x75\x74\x35","\x23\x73\x74\x72\x69\x70\x36\x35","\x23\x62\x36\x74\x6F\x6F\x6C\x5F\x6F\x75\x74\x70\x75\x74\x32","\x65\x65","\x74\x6F\x6F\x6C\x5F\x6F\x75\x74\x70\x75\x74\x31","\x6C\x6F\x67","","\x72\x65\x70\x6C\x61\x63\x65","\x74\x65\x73\x74","\x73\x70\x6C\x69\x74","\x2E","\x63\x6F\x6E\x63\x61\x74","\x74\x6F\x50\x72\x65\x63\x69\x73\x69\x6F\x6E","\x74\x6F\x46\x69\x78\x65\x64","\x74\x6F\x6F\x6C\x5F\x6F\x75\x74\x70\x75\x74\x33","\x74\x6F\x6F\x6C\x5F\x6F\x75\x74\x70\x75\x74\x34","\x73\x6C\x69\x63\x65","\x62\x61\x63\x6B\x67\x72\x6F\x75\x6E\x64","\x62\x61\x63\x6B\x67\x72\x6F\x75\x6E\x64\x2D\x63\x6F\x6C\x6F\x72","\x63\x73\x73","\x23","\x68\x74\x6D\x6C","\x72\x65\x6D\x6F\x76\x65\x43\x6C\x61\x73\x73","\x66\x6F\x72\x6D\x2D\x63\x6F\x6E\x74\x72\x6F\x6C\x20\x64\x69\x67\x69\x74\x2D\x70\x69\x63\x6B\x65\x72\x20","\x61\x64\x64\x43\x6C\x61\x73\x73","\x54","\x69\x64","\x63\x6F\x6C\x6F\x75\x72","\x63\x6F\x6D\x70\x75\x74\x65","\x63\x6C\x69\x63\x6B","\x2E\x63\x6F\x6C\x6F\x72\x65\x64\x2D\x62\x6F\x78","\x63\x6C\x61\x73\x73","\x6F\x70\x74\x69\x6F\x6E\x3A\x73\x65\x6C\x65\x63\x74\x65\x64","\x63\x6F\x6C\x6F\x75\x72\x32","\x63\x68\x61\x6E\x67\x65","\x2E\x64\x69\x67\x69\x74\x2D\x70\x69\x63\x6B\x65\x72","\x74\x72\x69\x67\x67\x65\x72","\x23\x62\x34\x64\x31","\x23\x62\x35\x64\x31","\x23\x62\x36\x64\x31"];!function(_0xd6f4x1){_0x35c4[0];var _0xd6f4x2;var _0xd6f4x3;var _0xd6f4x4;var _0xd6f4x5;var _0xd6f4x6={compute:function(_0xd6f4x7){for(var _0xd6f4x8,_0xd6f4x9=_0xd6f4x7[_0x35c4[1]](1,1),_0xd6f4xa=[],_0xd6f4xb=1;_0xd6f4x9> _0xd6f4xb;_0xd6f4xb++){_0xd6f4xa[_0x35c4[5]](_0xd6f4x1(_0x35c4[4]+ _0xd6f4x9+ _0xd6f4xb)[_0x35c4[3]](_0x35c4[2]))};var _0xd6f4xc,_0xd6f4xd=6> _0xd6f4x9?_0xd6f4xa[_0xd6f4x9- 2]:_0xd6f4xa[_0xd6f4x9- 3],_0xd6f4xe=_0x35c4[6]== _0xd6f4xd[_0x35c4[1]](0,1)?1:0,_0xd6f4xf=_0xd6f4xd[_0x35c4[7]](/\d+/),_0xd6f4x10=_0xd6f4xd[_0x35c4[1]](_0xd6f4xd[_0x35c4[8]]- 1);switch(_0xd6f4x10){case _0x35c4[9]:_0xd6f4xc= 1e3* _0xd6f4xf[0];break;case _0x35c4[10]:_0xd6f4xc= 1e6* _0xd6f4xf[0];break;case _0x35c4[11]:_0xd6f4xc= 1e9* _0xd6f4xf[0];break;default:_0xd6f4xc= _0xd6f4xf[0]};_0xd6f4x1(_0x35c4[13]+ _0xd6f4x9+ _0x35c4[14])[_0x35c4[12]](_0xd6f4x1(_0x35c4[4]+ _0xd6f4x9+ _0xd6f4x9)[_0x35c4[3]](_0x35c4[2])),4== _0xd6f4x9?_0xd6f4x8= 1== _0xd6f4xe?(10* _0xd6f4xa[0]+ 1* _0xd6f4xa[1])* _0xd6f4xc:(10* _0xd6f4xa[0]+ 1* _0xd6f4xa[1])/ _0xd6f4xc:5== _0xd6f4x9?_0xd6f4x8= 1== _0xd6f4xe?(100* _0xd6f4xa[0]+ 10* _0xd6f4xa[1]+ 1* _0xd6f4xa[2])* _0xd6f4xc:(100* _0xd6f4xa[0]+ 10* _0xd6f4xa[1]+ 1* _0xd6f4xa[2])/ _0xd6f4xc:6== _0xd6f4x9&& (_0xd6f4x8= 1== _0xd6f4xe?(100* _0xd6f4xa[0]+ 10* _0xd6f4xa[1]+ 1* _0xd6f4xa[2])* _0xd6f4xc:(100* _0xd6f4xa[0]+ 10* _0xd6f4xa[1]+ 1* _0xd6f4xa[2])/ _0xd6f4xc,_0xd6f4x1(_0x35c4[16])[_0x35c4[12]](_0xd6f4x1(_0x35c4[15])[_0x35c4[3]](_0x35c4[2])),_0xd6f4x1(_0x35c4[18])[_0x35c4[12]](_0xd6f4x1(_0x35c4[17])[_0x35c4[3]](_0x35c4[2]))),_0xd6f4x1(_0x35c4[13]+ _0xd6f4x9+ _0x35c4[20])[_0x35c4[12]](_0xd6f4x6[_0x35c4[19]](_0xd6f4x8));console[_0x35c4[21]](_0xd6f4x6[_0x35c4[19]](_0xd6f4x8));_0xd6f4x5= _0xd6f4x6[_0x35c4[19]](_0xd6f4x8)[_0x35c4[23]](/[^a-zA-Z]+/g,_0x35c4[22]);_0xd6f4x4= $(_0x35c4[13]+ _0xd6f4x9+ _0x35c4[14])[_0x35c4[12]]();console[_0x35c4[21]](_0xd6f4x4);_0xd6f4x4= _0xd6f4x4[_0x35c4[23]](/[^0-9]/g,_0x35c4[22]);console[_0x35c4[21]](_0xd6f4x4);var _0xd6f4x11=/^0[0-9].*$/;if(_0xd6f4x11[_0x35c4[24]](_0xd6f4x4)){var _0xd6f4x12=_0xd6f4x4[_0x35c4[25]](_0x35c4[22]);var _0xd6f4x13=_0x35c4[22];if(_0xd6f4x12[2]!= null){_0xd6f4x4= _0xd6f4x13[_0x35c4[27]](_0xd6f4x12[0],_0x35c4[26],_0xd6f4x12[1],_0xd6f4x12[2])}else {_0xd6f4x4= _0xd6f4x13[_0x35c4[27]](_0xd6f4x12[0],_0x35c4[26],_0xd6f4x12[1])};_0xd6f4x4= _0xd6f4x4/ 100;console[_0x35c4[21]](_0xd6f4x4)}else {_0xd6f4x4= _0xd6f4x4/ 100};console[_0x35c4[21]](_0xd6f4x4);_0xd6f4x2= parseFloat(_0xd6f4x6[_0x35c4[19]](_0xd6f4x8))- parseFloat(_0xd6f4x6[_0x35c4[19]](_0xd6f4x8))* _0xd6f4x4;console[_0x35c4[21]](_0xd6f4x2[_0x35c4[28]](6));_0xd6f4x2= _0xd6f4x2[_0x35c4[29]](6);_0xd6f4x3= parseFloat(_0xd6f4x6[_0x35c4[19]](_0xd6f4x8))+ parseFloat(_0xd6f4x6[_0x35c4[19]](_0xd6f4x8))* _0xd6f4x4;console[_0x35c4[21]](_0xd6f4x3[_0x35c4[28]](6));_0xd6f4x3= _0xd6f4x3[_0x35c4[29]](6);_0xd6f4x2= _0xd6f4x2+ _0xd6f4x5;_0xd6f4x3= _0xd6f4x3+ _0xd6f4x5;_0xd6f4x1(_0x35c4[13]+ _0xd6f4x9+ _0x35c4[30])[_0x35c4[12]](_0xd6f4x2);_0xd6f4x1(_0x35c4[13]+ _0xd6f4x9+ _0x35c4[31])[_0x35c4[12]](_0xd6f4x3)},colour:function(_0xd6f4x6){var _0xd6f4x7=_0xd6f4x6[_0x35c4[32]](-1),_0xd6f4x8=_0xd6f4x6[_0x35c4[1]](1,1);_0xd6f4x1(_0x35c4[4]+ _0xd6f4x8+ _0xd6f4x7)[_0x35c4[35]](_0x35c4[33],_0xd6f4x1(_0x35c4[36]+ _0xd6f4x6)[_0x35c4[35]](_0x35c4[34])),_0xd6f4x1(_0x35c4[4]+ _0xd6f4x8+ _0xd6f4x7)[_0x35c4[3]](_0x35c4[2],_0xd6f4x1(_0x35c4[36]+ _0xd6f4x6)[_0x35c4[37]]())},colour2:function(_0xd6f4x6,_0xd6f4x7){var _0xd6f4x8=_0xd6f4x6[_0x35c4[32]](-1),_0xd6f4x9=_0xd6f4x6[_0x35c4[1]](1,1);_0xd6f4x1(_0x35c4[36]+ _0xd6f4x6)[_0x35c4[38]](),_0xd6f4x1(_0x35c4[36]+ _0xd6f4x6)[_0x35c4[40]](_0x35c4[39]+ _0xd6f4x7),_0xd6f4x1(_0x35c4[4]+ _0xd6f4x9+ _0xd6f4x8)[_0x35c4[35]](_0x35c4[33],_0xd6f4x1(_0x35c4[36]+ _0xd6f4x6)[_0x35c4[35]](_0x35c4[34])),_0xd6f4x1(_0x35c4[4]+ _0xd6f4x9+ _0xd6f4x8)[_0x35c4[3]](_0x35c4[2],_0xd6f4x1(_0x35c4[36]+ _0xd6f4x6)[_0x35c4[12]]())},ee:function(_0xd6f4x1){return _0xd6f4x1>= 1e12?_0xd6f4x1= (_0xd6f4x1/ 1e12)[_0x35c4[29]](2)+ _0x35c4[41]:_0xd6f4x1>= 1e9?_0xd6f4x1= (_0xd6f4x1/ 1e9)[_0x35c4[29]](2)+ _0x35c4[11]:_0xd6f4x1>= 1e6?_0xd6f4x1= (_0xd6f4x1/ 1e6)[_0x35c4[29]](2)+ _0x35c4[10]:_0xd6f4x1>= 1e3?_0xd6f4x1= (_0xd6f4x1/ 1e3)[_0x35c4[29]](2)+ _0x35c4[9]:(_0xd6f4x1= parseFloat(_0xd6f4x1),_0xd6f4x1= _0xd6f4x1[_0x35c4[29]](2)),_0xd6f4x1}};_0xd6f4x1(_0x35c4[46])[_0x35c4[45]](function(){_0xd6f4x6[_0x35c4[43]](_0xd6f4x1(this)[_0x35c4[3]](_0x35c4[42])),_0xd6f4x6[_0x35c4[44]](_0xd6f4x1(this)[_0x35c4[3]](_0x35c4[42]))}),_0xd6f4x1(_0x35c4[51])[_0x35c4[50]](function(){var _0xd6f4x7=_0xd6f4x1(_0x35c4[48],this)[_0x35c4[3]](_0x35c4[47]);_0xd6f4x6[_0x35c4[49]](_0xd6f4x1(this)[_0x35c4[3]](_0x35c4[42]),_0xd6f4x7),_0xd6f4x6[_0x35c4[44]](_0xd6f4x1(this)[_0x35c4[3]](_0x35c4[42]))}),_0xd6f4x1(_0x35c4[53])[_0x35c4[52]](_0x35c4[50]),_0xd6f4x1(_0x35c4[54])[_0x35c4[52]](_0x35c4[50]),_0xd6f4x1(_0x35c4[55])[_0x35c4[52]](_0x35c4[50])}(jQuery)
+
+                                    </script>
+</p><p>
+<h3>Overview</h3>
+<p>Are you having trouble reading resistor color codes? If your answer is yes, then this tool is specifically designed for you! Our Resistor Color Code Calculator is a handy tool for reading carbon-composition &nbsp;resistors whether it &#39;s a 4-band, 5-band or 6-band type.&nbsp;</p>
+<p>To use this tool, simply click on a particular color and number and watch how the actual &nbsp;bands on the resistor illustration change. The resistance value is displayed on the field below together with the tolerance and the temperature coefficient.&nbsp;&nbsp;</p>
+<h3>
+    <span style="line-height: 1.6;">Notes</span>
+</h3>
+<p>As shown above, a carbon-composition resistor can have 4 to 6 bands. A 5-band resistor is more precise compared to a 4-band type because of the inclusion of a third signficant digit. A 6-band resistor is like a 5-band resistor but includes a temperature coefficient band (the 6th band).&nbsp;</p>
+<div class="table-responsive">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th scope="col" style="text-align: center;">&nbsp;</th>
+                <th scope="col" style="text-align: center;">4-band</th>
+                <th scope="col" style="text-align: center;">5-band</th>
+                <th scope="col" style="text-align: center;">6-band</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="text-align: center;">1st band</td>
+                <td style="text-align: center;">1st significant digit</td>
+                <td style="text-align: center;">1st significant digit</td>
+                <td style="text-align: center;">1st significant digit</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">2nd band</td>
+                <td style="text-align: center;">2nd significant digit</td>
+                <td style="text-align: center;">2nd significant digit</td>
+                <td style="text-align: center;">2nd significant digit</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">3rd band</td>
+                <td style="text-align: center;">multiplier</td>
+                <td style="text-align: center;">3rd significant digit</td>
+                <td>
+                    <p style="text-align: center;">3rd significant digit</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">4th band</td>
+                <td style="text-align: center;">tolerance</td>
+                <td style="text-align: center;">multiplier</td>
+                <td style="text-align: center;">multiplier</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">5th band</td>
+                <td style="text-align: center;">N/A</td>
+                <td style="text-align: center;">tolerance</td>
+                <td style="text-align: center;">tolerance</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">6th band</td>
+                <td style="text-align: center;">N/A</td>
+                <td style="text-align: center;">N/A</td>
+                <td style="text-align: center;">temperature coefficient</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<p>Each color represents a number if it &#39;s located from the 1st to 2nd band for a 4-band type or 1st to 3rd band for a 5-band and 6-band type.&nbsp;</p>
+<div class="table-responsive">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th scope="col" style="text-align: center;">Color</th>
+                <th scope="col" style="text-align: center;">Value</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="width: 50%; background-color: rgb(0, 0, 0);">
+                    <p style="color: white; text-align: center;">Black (2nd and 3rd bands only)</p>
+                </td>
+                <td style="text-align: center;">0</td>
+            </tr>
+            <tr>
+                <td style="text-align: center; background-color: rgb(153, 51, 0);">Brown</td>
+                <td style="text-align: center;">1</td>
+            </tr>
+            <tr>
+                <td style="text-align: center; background-color: rgb(204, 51, 0);">Red</td>
+                <td style="text-align: center;">2</td>
+            </tr>
+            <tr>
+                <td style="text-align: center; background-color: rgb(255, 153, 0);">Orange</td>
+                <td style="text-align: center;">3</td>
+            </tr>
+            <tr>
+                <td style="text-align: center; background-color: rgb(255, 255, 0);">Yellow</td>
+                <td style="text-align: center;">4</td>
+            </tr>
+            <tr>
+                <td style="text-align: center; background-color: rgb(0, 204, 0);">Green</td>
+                <td style="text-align: center;">5</td>
+            </tr>
+            <tr>
+                <td style="text-align: center; background-color: rgb(0, 51, 204);">Blue</td>
+                <td style="text-align: center;">6</td>
+            </tr>
+            <tr>
+                <td style="text-align: center; background-color: rgb(153, 51, 153);">Violet</td>
+                <td style="text-align: center;">7</td>
+            </tr>
+            <tr>
+                <td style="text-align: center; background-color: rgb(153, 153, 153);">Grey</td>
+                <td style="text-align: center;">8</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">White</td>
+                <td style="text-align: center;">9</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<p>&nbsp;</p>
+<p>
+    Mnemonics were created to easily memorize the sequence of the colors. The most popular mnemonic is "<strong>B</strong>
+    ig <strong>B</strong>
+    oys <strong>R</strong>
+    ace <strong>O</strong>
+    ur <strong>Y</strong>
+    oung <strong>G</strong>
+    irls <strong>B</strong>
+    ut &nbsp;<strong>V</strong>
+    iolet <strong>G</strong>
+    enerally <strong>W</strong>
+    ins" where the first letter of each word corresponds to the first letter of the color.&nbsp;
+</p>
+<p>If the color is found on the 3rd band for a 4-band type or the 4th band for a 5-band and 6-band type, then it &#39;s a multiplier.</p>
+<div class="table-responsive">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th scope="col" style="text-align: center;">Color</th>
+                <th scope="col" style="text-align: center;">Value</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="background-color: rgb(0, 0, 0);">
+                    <p style="color: white; text-align: center;">Black</p>
+                </td>
+                <td style="text-align: center; width: 50%;">x1</td>
+            </tr>
+            <tr>
+                <td style="text-align: center; background-color: rgb(153, 51, 0);">Brown</td>
+                <td style="text-align: center;">x10</td>
+            </tr>
+            <tr>
+                <td style="text-align: center; background-color: rgb(204, 51, 0);">Red</td>
+                <td style="text-align: center;">x100</td>
+            </tr>
+            <tr>
+                <td style="text-align: center; background-color: rgb(255, 153, 0);">Orange</td>
+                <td style="text-align: center;">x1000</td>
+            </tr>
+            <tr>
+                <td style="text-align: center; background-color: rgb(255, 255, 0);">Yellow</td>
+                <td style="text-align: center;">x10000</td>
+            </tr>
+            <tr>
+                <td style="text-align: center; background-color: rgb(0, 204, 0);">Green</td>
+                <td style="text-align: center;">x100000</td>
+            </tr>
+            <tr>
+                <td style="text-align: center; background-color: rgb(0, 51, 204);">Blue</td>
+                <td style="text-align: center;">x1000000</td>
+            </tr>
+            <tr>
+                <td style="text-align: center; background-color: rgb(153, 51, 153);">Violet</td>
+                <td style="text-align: center;">x10000000</td>
+            </tr>
+            <tr>
+                <td style="text-align: center; background-color: rgb(153, 153, 153);">Grey</td>
+                <td style="text-align: center;">x100000000</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">White</td>
+                <td style="text-align: center;">x1000000000</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<p>Notice &nbsp;that the number of zeroes is equal to the color &#39;s number as per the previous table.</p>
+<p>The fourth band (or 5th for the 5-band and 6-band) indicates the tolerance values. Here, two colors are added (gold and silver).</p>
+<div class="table-responsive">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th scope="col" style="text-align: center;">Color</th>
+                <th scope="col" style="text-align: center;">Value</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="background-color: rgb(0, 0, 0);">
+                    <p style="color: white; text-align: center;">Black</p>
+                </td>
+                <td style="text-align: center; width: 50%;">
+                    <p>N/A</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: center; background-color: rgb(153, 51, 0);">Brown</td>
+                <td style="text-align: center;">&plusmn;1%</td>
+            </tr>
+            <tr>
+                <td style="text-align: center; background-color: rgb(204, 51, 0);">Red</td>
+                <td style="text-align: center;">&plusmn;2%</td>
+            </tr>
+            <tr>
+                <td style="text-align: center; background-color: rgb(255, 153, 0);">Orange</td>
+                <td style="text-align: center;">&plusmn;3%</td>
+            </tr>
+            <tr>
+                <td style="text-align: center; background-color: rgb(255, 255, 0);">Yellow</td>
+                <td style="text-align: center;">&plusmn;4%</td>
+            </tr>
+            <tr>
+                <td style="text-align: center; background-color: rgb(0, 204, 0);">Green</td>
+                <td style="text-align: center;">&plusmn;0.5%</td>
+            </tr>
+            <tr>
+                <td style="text-align: center; background-color: rgb(0, 51, 204);">Blue</td>
+                <td style="text-align: center;">&plusmn;0.25%</td>
+            </tr>
+            <tr>
+                <td style="text-align: center; background-color: rgb(153, 51, 153);">Violet</td>
+                <td style="text-align: center;">&plusmn;0.15%</td>
+            </tr>
+            <tr>
+                <td style="text-align: center; background-color: rgb(153, 153, 153);">Grey</td>
+                <td style="text-align: center;">&plusmn;0.05%</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">White</td>
+                <td style="text-align: center;">N/A</td>
+            </tr>
+            <tr>
+                <td style="text-align: center; background-color: rgb(255, 204, 102);">Gold</td>
+                <td style="text-align: center;">&plusmn;5%</td>
+            </tr>
+            <tr>
+                <td style="text-align: center; background-color: rgb(204, 204, 204);">Silver</td>
+                <td style="text-align: center;">&plusmn;10%</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<p>The 6th band for a 6-band type resistor is the temperature coefficient. This indicates how much the actual resistance value of the resistor changes when the temperature changes.</p>
+<div class="table-responsive">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th scope="col" style="text-align: center;">Color</th>
+                <th scope="col" style="text-align: center;">Value</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="width: 50%; background-color: rgb(0, 0, 0);">
+                    <p style="color: white; text-align: center;">Black</p>
+                </td>
+                <td style="text-align: center;">N/A</td>
+            </tr>
+            <tr>
+                <td style="text-align: center; background-color: rgb(153, 51, 0);">Brown</td>
+                <td style="text-align: center;">100 ppm/&ordm;C</td>
+            </tr>
+            <tr>
+                <td style="text-align: center; background-color: rgb(204, 51, 0);">Red</td>
+                <td style="text-align: center;">50 ppm/&ordm;C</td>
+            </tr>
+            <tr>
+                <td style="text-align: center; background-color: rgb(255, 153, 0);">Orange</td>
+                <td style="text-align: center;">15 ppm/&ordm;C</td>
+            </tr>
+            <tr>
+                <td style="text-align: center; background-color: rgb(255, 255, 0);">Yellow</td>
+                <td style="text-align: center;">25 ppm/&ordm;C</td>
+            </tr>
+            <tr>
+                <td style="text-align: center; background-color: rgb(0, 204, 0);">Green</td>
+                <td style="text-align: center;">N/A</td>
+            </tr>
+            <tr>
+                <td style="text-align: center; background-color: rgb(0, 51, 204);">Blue</td>
+                <td style="text-align: center;">10 ppm/&ordm;C</td>
+            </tr>
+            <tr>
+                <td style="text-align: center; background-color: rgb(153, 51, 153);">Violet</td>
+                <td style="text-align: center;">5 ppm/&ordm;C</td>
+            </tr>
+            <tr>
+                <td style="text-align: center; background-color: rgb(153, 153, 153);">Grey</td>
+                <td style="text-align: center;">N/A</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">White</td>
+                <td style="text-align: center;">N/A</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<h3>
+    <br/>
+    <span style="line-height: 1.6;">Further Reading</span>
+</h3>
+<p>
+    <a href="http://www.allaboutcircuits.com/textbook/direct-current/chpt-2/resistors/">
+        <span style="line-height: 1.6;">Textbook - Resistor: Ohm &#39;s Law</span>
+    </a>
+</p>
+<p>
+    <a href="http://www.allaboutcircuits.com/textbook/reference/chpt-2/resistor-color-codes/">Textbook - Resistor Color Codes</a>
+</p>
+<p>
+    <a href="http://www.allaboutcircuits.com/worksheets/resistors/">Worksheet - Resistors</a>
+</p>
+</p></div>
+<div class="social-media-shares hidden-print">
+    <div class="item">
+        <div class="facebook">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.allaboutcircuits.com/tools/resistor-color-code-calculator/" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600'); ga('send', 'event', 'social-share', 'facebook',window.location.href)" ; return false;"
+   target=" _blank " title=" Share on Facebook ">
+				<i class=" fa fa-facebook "></i><span class=" counter hidden-sm hidden-xs ">Share</span>
+			</a>
+		</div>
+    </div>
+                             
+	<div class=" item ">
+		<div class=" twitter ">
+			<a href=" https://twitter.com/share?url=https://www.allaboutcircuits.com/tools/resistor-color-code-calculator/&via= allaboutcircuit "
+   onclick=" javascript:window.open(this.href,'' ,'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600' ); ga('send' ,'event' ,'social-share' ,'twitter' ,window.location.href)";return false;" target="_blank" title="Share on Twitter">
+                <i class="fa fa-twitter"></i>
+                <span class="counter hidden-sm hidden-xs">Share</span>
+            </a>
+        </div>
+    </div>
+    <div class="item">
+        <div class="google-plus">
+            <a href="https://plus.google.com/share?url=https://www.allaboutcircuits.com/tools/resistor-color-code-calculator/" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=350,width=480'); ga('send', 'event', 'social-share', 'google',window.location.href)" ;return false;"
+   target=" _blank " title=" Share on Google+">                                
+				<i class=" fa fa-google-plus "></i><span class=" counter hidden-sm hidden-xs ">Share</span>
+			</a>                                   
+		</div>
+	</div>
+                            
+	<div class=" item ">
+		<div class=" linkedin ">
+			<a href=" https://www.linkedin.com/shareArticle?mini=true&url= https://www.allaboutcircuits.com/tools/resistor-color-code-calculator /"
+   onclick=" javascript:window.open(this.href,'' ,'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600' ); ga('send' ,'event' ,'social-share' ,'linkedin' ,window.location.href)";return false;" target="_blank" title="Share on Linkedin">
+                <i class="fa fa-linkedin"></i>
+                <span class="counter hidden-sm hidden-xs">Share</span>
+            </a>
+        </div>
+    </div>
+    <div class="item">
+        <div class="reddit"><a href="https://www.reddit.com/submit?url=&url=https://www.allaboutcircuits.com/tools/resistor-color-code-calculator/&title=Resistor Color Code Calculator - Electrical Engineering & Electronics Tools"onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes'); ga('send', 'event', 'social-share', 'reddit',window.location.href)";return false;"
+   target="_blank " title="Share on Reddit ">                                
+				<i class="fa fa-reddit-alien "></i><span class="counter hidden-sm hidden-xs ">Share</span>
+			</a>                                    
+		</div>
+	 </div>
+</div>
+
+                        
+                        
+<div class="container-fluid other-articles hidden-print ">
+    <div id="relatedarticles " class="row ">
+        <h3><strong>You May Also Like:</strong></h3>
+    </div>
+    <div class="main-recommended-articles ">
+    
+      <div class="row article-item " id="recommended_1 ">
+        <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 ">
+          <div class="col-md-2 col-sm-2 col-xs-2 darken ">
+              <a href="/technical-articles/understanding-i-v-curves-part-i/" title="Understanding Current-Voltage Curves " onclick="ga('send','event','recommended article click','main site','https://www.allaboutcircuits.com/tools/resistor-color-code-calculator');"><img data-cfsrc="/uploads/thumbnails/_80_80/Krishnan_1_featured.jpg " alt="" class="" align="left " style="display:none;visibility:hidden;"/><noscript><img src="/uploads/thumbnails/_80_80/Krishnan_1_featured.jpg " alt="" class="" align="left " /></noscript></a>
+          </div>
+          <div class="col-lg-10 col-md-9 col-sm-9 col-xs-8 no-padding truncated ">
+            <a href="/technical-articles/understanding-i-v-curves-part-i/" title="Understanding Current-Voltage Curves " onclick="ga('send','event','recommended article click','main site','https://www.allaboutcircuits.com/tools/resistor-color-code-calculator');">
+              <h4 class="article-title ">Understanding Current-Voltage Curves</h4>
+              <div class="excerpt hidden-xs ">This article discusses I-V curves for passive components, voltage sources, and current sources.</div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-3 col-sm-3 hidden-xs article-meta-info ">
+          
+            
+              <div class="col-lg-12 meta-article-author " data-article-author="Ashwati Krishnan "><h4><a href="/author/ashwati-krishnan ">Ashwati Krishnan</a></h4></div>
+              
+            
+          
+          <div class="col-lg-12 meta-article-date " data-article-published="December 27,2016 ">December 27, 2016</div>
+        </div>
+      </div>
+    
+      <div class="row article-item " id="recommended_2 ">
+        <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 ">
+          <div class="col-md-2 col-sm-2 col-xs-2 darken ">
+              <a href="/technical-articles/inductor-out-op-amp-in-an-introduction-to-second-order-active-filters/" title="Inductor Out,Op-Amp In:An Introduction to Second-Order Active Filters " onclick="ga('send','event','recommended article click','main site','https://www.allaboutcircuits.com/tools/resistor-color-code-calculator');"><img data-cfsrc="/uploads/thumbnails/_80_80/An-Introduction-to-Second-Order-Active-Filters.jpg " alt="" class="" align="left " style="display:none;visibility:hidden;"/><noscript><img src="/uploads/thumbnails/_80_80/An-Introduction-to-Second-Order-Active-Filters.jpg " alt="" class="" align="left " /></noscript></a>
+          </div>
+          <div class="col-lg-10 col-md-9 col-sm-9 col-xs-8 no-padding truncated ">
+            <a href="/technical-articles/inductor-out-op-amp-in-an-introduction-to-second-order-active-filters/" title="Inductor Out,Op-Amp In:An Introduction to Second-Order Active Filters " onclick="ga('send','event','recommended article click','main site','https://www.allaboutcircuits.com/tools/resistor-color-code-calculator');">
+              <h4 class="article-title ">Inductor Out, Op-Amp In: An Introduction to Second-Order Active Filters</h4>
+              <div class="excerpt hidden-xs ">In this article, we’ll compare active and passive filters and look at some common second-order active topologies.</div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-3 col-sm-3 hidden-xs article-meta-info ">
+          
+            
+              <div class="col-lg-12 meta-article-author " data-article-author="Robert Keim "><h4><a href="/author/robert-keim ">Robert Keim</a></h4></div>
+              
+            
+          
+          <div class="col-lg-12 meta-article-date " data-article-published="May 19,2016 ">May 19, 2016</div>
+        </div>
+      </div>
+    
+      <div class="row article-item " id="recommended_3 ">
+        <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 ">
+          <div class="col-md-2 col-sm-2 col-xs-2 darken ">
+              <a href="/technical-articles/choosing-and-using-ferrite-beads/" title="Choosing and Using Ferrite Beads " onclick="ga('send','event','recommended article click','main site','https://www.allaboutcircuits.com/tools/resistor-color-code-calculator');"><img data-cfsrc="/uploads/thumbnails/_80_80/Choosing-and-Using-Ferrite-Beads.png " alt="" class="" align="left " style="display:none;visibility:hidden;"/><noscript><img src="/uploads/thumbnails/_80_80/Choosing-and-Using-Ferrite-Beads.png " alt="" class="" align="left " /></noscript></a>
+          </div>
+          <div class="col-lg-10 col-md-9 col-sm-9 col-xs-8 no-padding truncated ">
+            <a href="/technical-articles/choosing-and-using-ferrite-beads/" title="Choosing and Using Ferrite Beads " onclick="ga('send','event','recommended article click','main site','https://www.allaboutcircuits.com/tools/resistor-color-code-calculator');">
+              <h4 class="article-title ">Choosing and Using Ferrite Beads</h4>
+              <div class="excerpt hidden-xs ">This article provides practical guidance on using ferrite beads to improve your PCB’s power quality.</div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-3 col-sm-3 hidden-xs article-meta-info ">
+          
+            
+              <div class="col-lg-12 meta-article-author " data-article-author="Robert Keim "><h4><a href="/author/robert-keim ">Robert Keim</a></h4></div>
+              
+            
+          
+          <div class="col-lg-12 meta-article-date " data-article-published="October 11,2015 ">October 11, 2015</div>
+        </div>
+      </div>
+    
+      <div class="row article-item " id="recommended_4 ">
+        <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 ">
+          <div class="col-md-2 col-sm-2 col-xs-2 darken ">
+              <a href="/projects/embedded-pid-temperature-control-part-1-the-circuit/" title="Embedded PID Temperature Control,Part 1:The Circuit " onclick="ga('send','event','recommended article click','main site','https://www.allaboutcircuits.com/tools/resistor-color-code-calculator');"><img data-cfsrc="/uploads/thumbnails/_80_80/thermostat.jpg " alt="" class="" align="left " style="display:none;visibility:hidden;"/><noscript><img src="/uploads/thumbnails/_80_80/thermostat.jpg " alt="" class="" align="left " /></noscript></a>
+          </div>
+          <div class="col-lg-10 col-md-9 col-sm-9 col-xs-8 no-padding truncated ">
+            <a href="/projects/embedded-pid-temperature-control-part-1-the-circuit/" title="Embedded PID Temperature Control,Part 1:The Circuit " onclick="ga('send','event','recommended article click','main site','https://www.allaboutcircuits.com/tools/resistor-color-code-calculator');">
+              <h4 class="article-title ">Embedded PID Temperature Control, Part 1: The Circuit</h4>
+              <div class="excerpt hidden-xs ">Invoke the power of the PID (proportional–integral–derivative controller)! The key components in this design are an EFM8...</div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-3 col-sm-3 hidden-xs article-meta-info ">
+          
+            
+              <div class="col-lg-12 meta-article-author " data-article-author="Robert Keim "><h4><a href="/author/robert-keim ">Robert Keim</a></h4></div>
+              
+            
+          
+          <div class="col-lg-12 meta-article-date " data-article-published="February 01,2016 ">February 01, 2016</div>
+        </div>
+      </div>
+    
+    </div>
+    <br />
+    <p class="text-center "><strong><a href="/latest/" onclick="ga('send','event','recommended article click','main site','load more');"><i class="fa fa-arrow-down "></i> Load More</a></strong></p>
+</div>
+                        
+
+
+
+                        <h3 id="comments-control "><a href="#"><b>Comments</b><i class="fa fa-chevron-up "></i></a></h3>
+<div id="comments-wrap " class="disqus-theme comments-box collapse in ">
+    <h4><span><b itemprop="commentCount ">
+11 Comments</b></span><a href="/login/" class="pull-right login "><i class="fa fa-comment "></i>Login</a></h4>
+    <hr />
+
+    <div class="row ">
+        <div id="comments " class="col-sm-12 ">
+            <form id="main-form " method="post " action="https://www.allaboutcircuits.com/"  >
+<div class='hiddenFields'>
+<input type="hidden " name="ACT " value="25 " />
+<input type="hidden " name="RET " value="https://www.allaboutcircuits.com/tools/resistor-color-code-calculator " />
+<input type="hidden " name="URI " value="tools/resistor-color-code-calculator " />
+<input type="hidden " name="entry_id " value="36186 " />
+<input type="hidden " name="parent_id " value="0 " />
+<input type="hidden " name="site_id " value="1 " />
+<input type="hidden " name="csrf_token " value="852703059e904c25c0f21f035b1d16e6453998f0 " />
+</div>
+
+<div class="form-group clearfix ">
+                <textarea style="resize:none;" placeholder="Please login before you can comment." readonly name="comment " rows="4 " class="form-control comment-comment "></textarea>
+                <input type="button " disabled="true "id="submitComment " value="Submit " class="commentButton btn btn-theme pull-right " style="margin-top:5px;">
+            </div></form>
+
+            <ul class="threads " itemscope itemtype="http://schema.org/UserComments ">
+                
+
+                <li class="media ">
+                    <div class="pull-left commentAvatar ">
+                        <a href="//forum.allaboutcircuits.com/members/ilane.218235/">
+                        <img src="//forum.allaboutcircuits.com/avatar.php?username=ilane&size=s "  height="40px " width="40px " alt="ilane 's avatar" />
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <div class="media-heading">
+                            <a href="//forum.allaboutcircuits.com/members/ilane.218235/" class="name"><b itemprop="name">ilane</b></a>
+                            <span class="date" itemprop="commentTime">2016-04-29</span>
+                        </div>
+                        <div itemprop="commentText"><p>Yep. Those were the days. I&#8217;ll never forget the basics of this. Some of the stuff, though, is esoteric as hell. Who&#8217;d make these days a  ±0.05% tolerance resistor and mark it with color bands? Who has ever made one?</p></div>
+                        
+                        <div class="meta">
+                            <a href="#" class="reply" rel="991">Reply</a>
+                        </div>
+                        
+                    </div>
+                </li>
+                
+
+                <li class="media">
+                    <div class="pull-left commentAvatar">
+                        <a href="//forum.allaboutcircuits.com/members/col_panek.292870/">
+                        <img src="//forum.allaboutcircuits.com/avatar.php?username=col_panek&size=s"  height="40px" width="40px" alt="col_panek's avatar " />
+                        </a>
+                    </div>
+                    <div class="media-body ">
+                        <div class="media-heading ">
+                            <a href="//forum.allaboutcircuits.com/members/col_panek.292870/" class="name "><b itemprop="name ">col_panek</b></a>
+                            <span class="date " itemprop="commentTime ">2016-11-05</span>
+                        </div>
+                        <div itemprop="commentText "><p>Funny, I never heard that mnemonic, but something similar which I won&#8217;t repeat.</p></div>
+                        
+                        <div class="meta ">
+                            <a href="#" class="reply " rel="2411 ">Reply</a>
+                        </div>
+                        
+                    </div>
+                </li>
+                
+
+                <li class="media ">
+                    <div class="pull-left commentAvatar ">
+                        <a href="//forum.allaboutcircuits.com/members/Eugene-Edwards-.402579/">
+                        <img src="//forum.allaboutcircuits.com/avatar.php?username=Eugene Edwards &size=s "  height="40px " width="40px " alt="Eugene Edwards 's avatar" />
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <div class="media-heading">
+                            <a href="//forum.allaboutcircuits.com/members/Eugene Edwards .402579/" class="name"><b itemprop="name">Eugene Edwards </b></a>
+                            <span class="date" itemprop="commentTime">2016-12-22</span>
+                        </div>
+                        <div itemprop="commentText"><p>I find this to be extremely helpful it&#8217;s about to save me $250.00 because now I can replace the resistor I fried on my electric board instead of buying a whole new board I&#8217;m so grateful to finally find a site that gives detailed information on electronics no one in this area wants to learn it so colleges have not had the class available thank you very much</p></div>
+                        
+                        <div class="meta">
+                            <a href="#" class="reply" rel="2841">Reply</a>
+                        </div>
+                        
+                    </div>
+                </li>
+                
+
+                <li class="media">
+                    <div class="pull-left commentAvatar">
+                        <a href="//forum.allaboutcircuits.com/members/Yahiko.359045/">
+                        <img src="//forum.allaboutcircuits.com/avatar.php?username=Yahiko&size=s"  height="40px" width="40px" alt="Yahiko's avatar " />
+                        </a>
+                    </div>
+                    <div class="media-body ">
+                        <div class="media-heading ">
+                            <a href="//forum.allaboutcircuits.com/members/Yahiko.359045/" class="name "><b itemprop="name ">Yahiko</b></a>
+                            <span class="date " itemprop="commentTime ">2016-12-23</span>
+                        </div>
+                        <div itemprop="commentText "><p>I would like a version that I can have on my computer because I don&#8217;t always have a connection.</p></div>
+                        
+                        <div class="meta ">
+                            <a href="#" class="reply " rel="2859 ">Reply</a>
+                        </div>
+                        
+                    </div>
+                </li>
+                
+
+                <li class="media ">
+                    <div class="pull-left commentAvatar ">
+                        <a href="//forum.allaboutcircuits.com/members/ray.leiter.410060/">
+                        <img src="//forum.allaboutcircuits.com/avatar.php?username=ray.leiter&size=s "  height="40px " width="40px " alt="ray.leiter 's avatar" />
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <div class="media-heading">
+                            <a href="//forum.allaboutcircuits.com/members/ray.leiter.410060/" class="name"><b itemprop="name">ray.leiter</b></a>
+                            <span class="date" itemprop="commentTime">2017-01-21</span>
+                        </div>
+                        <div itemprop="commentText"><p>Why would anyone go to the trouble of developing an application this useful and not provide a tolerance setting of 20%&#8212;it make NO sense!</p></div>
+                        
+                        <div class="meta">
+                            <a href="#" class="reply" rel="3043">Reply</a>
+                        </div>
+                        
+                    </div>
+                </li>
+                
+
+                <li class="media">
+                    <div class="pull-left commentAvatar">
+                        <a href="//forum.allaboutcircuits.com/members/Jari.191652/">
+                        <img src="//forum.allaboutcircuits.com/avatar.php?username=Jari&size=s"  height="40px" width="40px" alt="Jari's avatar " />
+                        </a>
+                    </div>
+                    <div class="media-body ">
+                        <div class="media-heading ">
+                            <a href="//forum.allaboutcircuits.com/members/Jari.191652/" class="name "><b itemprop="name ">Jari</b></a>
+                            <span class="date " itemprop="commentTime ">2017-02-03</span>
+                        </div>
+                        <div itemprop="commentText "><p>Your calculator is not correct!<br />
+0.1% qn 200K is not 220K is comes to 200.2K or 199.9L on the minus side.<br />
+Hreetings John.</p></div>
+                        
+                        <div class="meta ">
+                            <a href="#" class="reply " rel="3092 ">Reply</a>
+                        </div>
+                        
+                    </div>
+                </li>
+                <ul class="media-list replies ">
+
+                <li class="media ">
+                    <div class="pull-left commentAvatar ">
+                        <a href="//forum.allaboutcircuits.com/members/RK37.271625/">
+                        <img src="//forum.allaboutcircuits.com/avatar.php?username=RK37&size=s "  height="40px " width="40px " alt="RK37 's avatar" />
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <div class="media-heading">
+                            <a href="//forum.allaboutcircuits.com/members/RK37.271625/" class="name"><b itemprop="name">RK37</b></a>
+                            <span class="date" itemprop="commentTime">2017-02-03</span>
+                        </div>
+                        <div itemprop="commentText"><p>Hi Jari, I cannot quite understand your comment. Can you explain the problem in a different way?</p></div>
+                        
+                        <div class="meta">
+                            <a href="#" class="reply" rel="3093">Reply</a>
+                        </div>
+                        
+                    </div>
+                </li>
+                <ul class="media-list replies">
+
+                <li class="media">
+                    <div class="pull-left commentAvatar">
+                        <a href="//forum.allaboutcircuits.com/members/iwasawizard.419668/">
+                        <img src="//forum.allaboutcircuits.com/avatar.php?username=iwasawizard&size=s"  height="40px" width="40px" alt="iwasawizard's avatar " />
+                        </a>
+                    </div>
+                    <div class="media-body ">
+                        <div class="media-heading ">
+                            <a href="//forum.allaboutcircuits.com/members/iwasawizard.419668/" class="name "><b itemprop="name ">iwasawizard</b></a>
+                            <span class="date " itemprop="commentTime ">2017-02-22</span>
+                        </div>
+                        <div itemprop="commentText "><p>If you calculate a 200K resistor with a tolerance of 0.1%, the calculator will give a tolerance floor of 180K and a ceiling of 220K, which is correct for 10% tolerance, not 0.1%. The correct tolerance limits should be 199.8K - 200.2K.</p></div>
+                        
+                    </div>
+                </li>
+                </ul></ul>
+
+                <li class="media ">
+                    <div class="pull-left commentAvatar ">
+                        <a href="//forum.allaboutcircuits.com/members/Robert-Keim./">
+                        <img src="//forum.allaboutcircuits.com/avatar.php?username=Robert Keim&size=s "  height="40px " width="40px " alt="Robert Keim 's avatar" />
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <div class="media-heading">
+                            <a href="//forum.allaboutcircuits.com/members/Robert Keim./" class="name"><b itemprop="name">Robert Keim</b></a>
+                            <span class="date" itemprop="commentTime">2017-02-23</span>
+                        </div>
+                        <div itemprop="commentText"><p>Ah, thanks for clarifying that, iwasawizard. We fixed it.</p></div>
+                        
+                        <div class="meta">
+                            <a href="#" class="reply" rel="3292">Reply</a>
+                        </div>
+                        
+                    </div>
+                </li>
+                
+
+                <li class="media">
+                    <div class="pull-left commentAvatar">
+                        <a href="//forum.allaboutcircuits.com/members/Jatrik-Maity.446883/">
+                        <img src="//forum.allaboutcircuits.com/avatar.php?username=Jatrik Maity&size=s"  height="40px" width="40px" alt="Jatrik Maity's avatar " />
+                        </a>
+                    </div>
+                    <div class="media-body ">
+                        <div class="media-heading ">
+                            <a href="//forum.allaboutcircuits.com/members/Jatrik Maity.446883/" class="name "><b itemprop="name ">Jatrik Maity</b></a>
+                            <span class="date " itemprop="commentTime ">2017-05-20</span>
+                        </div>
+                        <div itemprop="commentText "><p>how can I choose ist band inthe case 5 or 6 band</p></div>
+                        
+                        <div class="meta ">
+                            <a href="#" class="reply " rel="3913 ">Reply</a>
+                        </div>
+                        
+                    </div>
+                </li>
+                
+
+                <li class="media ">
+                    <div class="pull-left commentAvatar ">
+                        <a href="//forum.allaboutcircuits.com/members/Jatrik-Maity.446883/">
+                        <img src="//forum.allaboutcircuits.com/avatar.php?username=Jatrik Maity&size=s "  height="40px " width="40px " alt="Jatrik Maity 's avatar" />
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <div class="media-heading">
+                            <a href="//forum.allaboutcircuits.com/members/Jatrik Maity.446883/" class="name"><b itemprop="name">Jatrik Maity</b></a>
+                            <span class="date" itemprop="commentTime">2017-05-20</span>
+                        </div>
+                        <div itemprop="commentText"><p>How  can I select 1st band among 5 bands</p></div>
+                        
+                        <div class="meta">
+                            <a href="#" class="reply" rel="3914">Reply</a>
+                        </div>
+                        
+                    </div>
+                </li>
+                
+            </ul>
+
+            <form id="reply-form" class="hidden well" method="post" action="https://www.allaboutcircuits.com/"  >
+<div class='hiddenFields '>
+<input type="hidden" name="ACT" value="25" />
+<input type="hidden" name="RET" value="https://www.allaboutcircuits.com/tools/resistor-color-code-calculator" />
+<input type="hidden" name="URI" value="tools/resistor-color-code-calculator" />
+<input type="hidden" name="entry_id" value="36186" />
+<input type="hidden" name="parent_id" value="0" />
+<input type="hidden" name="site_id" value="1" />
+<input type="hidden" name="csrf_token" value="852703059e904c25c0f21f035b1d16e6453998f0" />
+</div>
+
+<div class="form-group clearfix">
+                <textarea style="resize:none;" placeholder="Please login before you can reply to this comment." readonly name="comment" rows="2" class="form-control comment-comment" ></textarea>
+                <input type="button" disabled="true"id="submitComment" value="Submit" class="commentButton btn btn-theme pull-right" style="margin-top:5px;">
+            </div></form>
+        </div>
+        <div class="clearfix">&nbsp;</div>
+    </div>
+
+
+</div>
+                    </article>
+                    <div class="clearfix">&nbsp;</div>
+                </div><!-- main-content -->
+
+                <div class="col-lg-3 col-md-4 col-sm-5 col-xs-6 right-sidebar sidebar-offcanvas block-1" data-mh="block-1">
+                    <div class="widget forum-threads">
+
+                        <div class="hidden-lg hidden-md col-xs-12 sidebar-link">
+                            <br />
+                            <a href="#" data-toggle="offcanvas" ><i class="fa fa-chevron-left"></i> &nbsp; Close</a>
+                            <div class="clearfix"></div>
+                        </div>
+                        <h3>Related Tools</h3>
+                        <ul class="sidebar-articles">
+                            <li class="forum-item "><a href="/tools/capacitor-impedance-calculator/"><div class="forum-link-container">Capacitor Impedance Calculator</div></a></li><li class="forum-item "><a href="/tools/ohms-law-calculator/"><div class="forum-link-container">Ohm&#8217;s Law Calculator</div></a></li><li class="forum-item "><a href="/tools/capacitor-Charge-and-time-constant-calculator/"><div class="forum-link-container">Capacitor Charge and Time Constant Calculator</div></a></li><li class="forum-item "><a href="/tools/voltage-divider-calculator/"><div class="forum-link-container">Voltage Divider Calculator</div></a></li><li class="forum-item "><a href="/tools/parallel-resistance-calculator/"><div class="forum-link-container">Parallel Resistance Calculator</div></a></li>
+                        </ul>
+                    </div>
+                    <div id="stick_column">
+<div class="widget ads sidepin leaderboard_ad">
+	<!-- /62616433/main_sidebar -->
+	<div id='div-gpt-ad-1429623690593-0 '>
+		<script type='text/javascript '>
+			googletag.cmd.push(function() {googletag.display('div-gpt-ad-1429623690593-0 ');});
+		</script>
+	</div>
+  
+</div>
+<div class="widget recommended-articles">
+    <div class="sidebar-recommended-articles">
+		<div class="clearfix"></div>
+	</div>
+	<div class="clearfix"></div>	
+</div>
+</div>
+
+
+
+                </div>
+
+
+
+            </div><!--row rowtable -->
+        </div>
+    </section>
+</main>
+
+
+<footer class="hidden-print">
+    <div class="widgets-box">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-4  col-xs-12 widget-item">
+                    <h4>WHO WE ARE</h4>
+                    <p>
+                        <a class="logo-link" href="/"><img class="navLogo" alt="All About Circuits" data-cfsrc="/assets/images/aac_logo.png" style="display:none;visibility:hidden;"/><noscript><img class="navLogo" alt="All About Circuits" src="/assets/images/aac_logo.png"/></noscript>
+                        </a>
+                    </p>
+                    <div class="description"> <a href="/contact-us/" class="see-more">More about us <i class="fa fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-2 col-xs-6 widget-item">
+                    <h4>Content</h4>
+                    <div class="col-md-6 col-sm-12 footer-links">
+                        <ul class="list-unstyled">
+                            <li><a href="/news/">News</a>
+                            </li>
+                            <li><a href="/projects/">Projects</a>
+                            </li>
+                            <li><a href="/technical-articles/">Technical Articles</a>
+                            </li>
+                            <li><a href="/textbook/">Textbook</a>
+                            </li>
+                            <li><a href="/industry-articles/">Industry Articles</a></li>
+                            <li><a href="/industry-webinars/">Industry Webinars</a></li>
+                            <li><a href="/test-measurement/">Test Equipment</a></li>
+                            <li><a href="/bom/">BOM Tool</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="col-md-6 col-sm-12 footer-links">
+                        <ul class="list-unstyled">
+                            <li><a href="/giveaways/">Giveaways</a></li>
+                            <li><a href="/video-lectures/">Video Lectures</a></li>
+                            <li><a href="/worksheets/">Worksheets</a></li>
+                            <li><a href="//forum.allaboutcircuits.com/">Forum</a></li>
+                            <li><a href="/tools/">Calculators</a></li>
+                            <li><a href="/electronic-components/" title="Electronic parts datasheets, prices & stock">Electronic Components</a>
+                            <li><a href="/electronic-components/manufacturer/">Datasheets</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-2 col-xs-6 widget-item">
+                    <h4>Categories</h4>
+                    <div class="col-md-6 col-sm-12 footer-links">
+                        <ul class="list-unstyled">
+                            <li><a href="/latest/">Latest</a></li>
+                            <li><a href="/latest/automotive/">Automotive</a></li>
+                            <li><a href="/latest/analog/">Analog</a></li>
+                            <li><a href="/projects/category/arduino/">Arduino Projects</a></li>
+                            <li><a href="/latest/connectors/">Connectors</a></li>
+                            <li><a href="/latest/digital-ics/">Digital ICs</a>
+                            <li><a href="/latest/electromechanical/">Electromechanical </a></li>
+                            <li><a href="/latest/embedded/">Embedded</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 col-sm-12 footer-links">
+                        <ul class="list-unstyled">
+                            <li><a href="/latest/eda/">EDA Tools</a></li>
+                            <li><a href="/latest/iot/">IoT</a></li>
+                            <li><a href="/latest/pcb/">PCB</a></li>
+                            <li><a href="/latest/power/">Power</a></li>
+                            <li><a href="/latest/sensors/">Sensors</a></li>
+                            <li><a href="/latest/test-and-measurement/">Test & Measurement</a></li>
+                            <li><a href="/latest/wearables/">Wearables</a></li>
+                            <li><a href="/latest/wireless-rf/">Wireless RF</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-4 col-xs-12 widget-item social-widget-box">
+                    <div class="row">
+                        <h4>Connect with Us</h4>
+                        <div class="col-md-6 col-sm-6 col-xs-6 footer-links">
+                            <ul class="list-unstyled">
+                                <li><a href="https://www.facebook.com/allaboutcircuits" target="_blank">Facebook</a>
+                                </li>
+                                <li><a href="https://twitter.com/AllAboutCircuit" target="_blank">Twitter</a>
+                                </li>
+                                <li><a href="https://www.youtube.com/c/AllAboutCircuitsVideo" target="_blank">YouTube</a></li>
+                                <li><a href="https://www.linkedin.com/company/allaboutcircuits" target="_blank">LinkedIn</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-6 footer-links">
+                            <ul class="list-unstyled">
+                                <li><a href="/contact-us/">Contact Us</a></li>
+                                <li><a href="/write-for-us/" onclick="ga('send','event','write-for-us','footer ')">Write For Us</a></li>
+                                <li><a href="//www.eetech.com/" target="_blank">Advertise</a></li>
+                                <li><a href="http://us8.campaign-archive1.com/home/?u=18656ef6df14c935d4d9192ee&id=2565529c4b">Newsletters</a></li></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="clearfix visible-sm visible-xs">&nbsp;</div>
+                    
+                    <div class="row">
+                        <h4>Sign Up</h4>
+                        <div class="newsletter-box">
+                            <form class="form-inline" role="form">
+                                <div class="input-group">
+
+                                    <input type="text" id="signupemail" class="form-control" placeholder="Enter your email address">
+                                    <div class="input-group-btn">
+                                        <button type="button" class="btn" onclick="window.location.href='//forum.allaboutcircuits.com/register?email='+$('#signupemail ').val();">Register</button>
+                                    </div>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright-box">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <p>© <a href="//eetech.com/" target="_blank">EETech Media, LLC</a>. All rights reserved</p>
+                </div>
+                <div class="col-md-6 col-sm-6 hidden-xs">
+                    <a href="/privacy-policy/">Privacy Policy</a> · <a href="//forum.allaboutcircuits.com/help/terms">Terms of Service</a> · <a href="/user-agreement/">User Agreement</a>
+                    <div class="back-to-top pull-right sm-hidden"><img data-cfsrc="/assets/images/btn-scrollUp.png" style="display:none;visibility:hidden;"/><noscript><img src="/assets/images/btn-scrollUp.png" /></noscript>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script src="/assets/js/jquery.mobile.custom.min.js"></script>
+<script src="/assets/library/bootstrap/js/bootstrap.min.js"></script>
+<script src="/assets/js/modernizr.js"></script>
+<script src="/assets/library/sticky-kit.min.js"></script>
+<script src="/assets/library/jquery.matchHeight/jquery.matchHeight.js"></script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.hoverintent/1.8.1/jquery.hoverIntent.min.js"></script>
+
+<script src="/assets/library/adpopup-pro/js/adpopup-pro.modified.min.js"></script>
+<script src="/assets/library/bootstrap-notify/bootstrap-notify.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+
+<script src="/assets/js/main.js"></script>
+<script src="/assets/js/menu.js"></script>
+<script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/javascript" src="/assets/library/jquery.dotdotdot/jquery.dotdotdot.js"></script>
+<script type="text/javascript" src="/assets/js/tools.js?b"></script>
+
+
+
+<!-- /62616433/main_wallpaper -->
+<div id='div-gpt-ad-1430235245447-0 ' class="wallpaperadpixel">
+	<script type='text/javascript '>
+		googletag.cmd.push(function() {googletag.display('div-gpt-ad-1430235245447-0 ');});
+	</script>
+</div>
+
+
+<div id='div-gpt-ad-1430160889889-0 '><script type='text/javascript '>googletag.cmd.push(function() {googletag.display('div-gpt-ad-1430160889889-0 ');});</script></div>
+
+<script type="text/javascript">
+$(document).ready(function() {
+      var ads = {
+        'ad_1': {
+          'type': 'jquery',
+          'elem': '#div-gpt-ad-1430160889889-0'
+        }
+      };
+
+      $('body ').adPopupPro({
+        ads: ads,
+        width: 640,
+        height: 480,
+        popup_color: 'dark ',
+        overlay_close: false,
+        overlay_color: 'dark ',
+        auto_close_after: 18000,
+        escape_close: false,
+        show_type: 'day ',
+        cookie_id: 'aac_welcome'
+      });
+});
+
+$('#div-gpt-ad-1430160889889-0 ').bind('adready ',function() {
+	$('.adpopup-overlay ').show();
+	$('.adpopup ').show();
+});
+</script>
+
+
+
+
+
+<!-- Twitter universal website tag code -->
+<script>
+    !function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);},s.version='1.1 ',s.queue=[],u=t.createElement(n),u.async=!0,u.src='//static.ads-twitter.com/uwt.js ',
+        a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script ');
+    // Insert Twitter Pixel ID and Standard Event data below
+    twq('init','nw9qi ');
+    twq('track','PageView ');
+</script>
+<!-- End Twitter universal website tag code -->
+</body>
+
+</html>

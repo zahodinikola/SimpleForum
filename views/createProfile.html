@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <title>Topics List</title>
+
+</head>
+<body ng-app="createProfile" ng-controller="createProfileController">
+    <div class="container">
+        <div class="row">
+			<div class="col-sm-4">
+				<div class="col-sm-12">
+					<img class="img-thumbnail" ng-src="{{profile.avatar}}" alt="avatar">
+				</div>
+				<br>
+				<div class="col-sm-offset-2 col-sm-2">
+					<button type="button" class="btn btn-default" ng-click="upload()">Upload</button>
+				</div>
+			</div>
+			<div class="col-sm-8">
+					<h3>{{profile.name}}</h3>
+					<form name="userData" class="form-horizontal">
+						<div class="form-group">
+							
+								<label for="name" class="control-label col-sm-3">Name: </label>
+								<div class="col-sm-9">
+									<input type="text" id="name" class="form-control" ng-model="profile.name" placeholder="enter name">
+								</div>
+								
+						</div>
+						<div class="form-group">
+						
+								<label for="email" class="control-label col-sm-3">Email address: </label>
+								<div class="col-sm-9">
+									<input type="email" id="email" class="form-control" ng-model="profile.email" placeholder="enter email">
+								</div>
+							
+						</div>
+						<div class="form-group">
+						
+								<label for="password" class="control-label col-sm-3">Set new password: </label>
+								<div class="col-sm-9">
+									<input type="password" id="password" class="form-control" placeholder="enter password">
+								</div>
+						
+						</div>
+					</form>
+				
+			</div>
+			<div class="row">
+				<div class="col-sm-6 text-right">
+					<div>
+						<button type="button" form="userData" class="btn btn-default" ng-click="save()">Save</button>
+					</div>
+				</div>
+				<div class="col-sm-6 text-left">
+					<div>
+						<button type="button" class="btn btn-default" ng-click="cansel()">Cancel</button>
+					</div>
+				</div>
+        	</div>	
+		<div>
+    </div>
+
+    <script src="../node_modules/angular/angular.js"></script>
+    <script>
+        var app = angular.module('createProfile', []);
+        app.controller('createProfileController', function($scope) {
+            $scope.profile = {
+				name: "4unCoder",
+				email: "4uncoder@mail.com",
+				password: "111",
+				avatar: "../app/assets/img/myAvatar 200.png"
+			};
+			$scope.save = function() {
+
+			};
+			$scope.cancel = function() {
+
+			};
+        });
+    </script>
+</body>
+</html>    
+</body>
+</html>
