@@ -8,14 +8,14 @@ var simpleForum = angular.module('simpleForum', ['ngRoute', 'ng-breadcrumbs'])
             templateUrl: "./views/login.html",
             controller: "loginController",
             label: "Login"
-        }),
-        $routeProvider.when('/signUp',
+        })
+        .when('/signUp',
         {
             templateUrl: "./views/signUp.html",
             controller: "signupController",
             label: "Signup"
-        }),
-        $routeProvider.when('/landing',
+        })
+        .when('/landing',
         {
             templateUrl: "./views/landing.html",
             controller: "landingController",
