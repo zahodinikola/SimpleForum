@@ -7,16 +7,16 @@
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
     <title>Groups List</title>
 
-    <style>
+    <!-- <style>
         td {
             display: table-cell;
             vertical-align: middle;
             margin-right: auto
         }
-    </style>
+    </style> -->
 
 </head>
-<body ng-app="groups" ng-controller="groupsController">
+<body ng-app="simpleForum" ng-controller="groupsController">
     <div class="container">
         <table class="table table-bordered">
             <thead>
@@ -61,11 +61,15 @@
         </table>
     </div>
 
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="../node_modules/angular/angular.js"></script>
-    <script>
-        var app = angular.module('simpleForum', []);
-        
-    </script>
+    <script src="../node_modules/angular-route/angular-route.js"></script>
+    <script src="../node_modules/angular-breadcrumbs/dist/ng-breadcrumbs.min.js"></script>
+    
+    <script src="../app/app.js"></script>
+    <script src="../app/controllers/groupsController.js"></script>
+
 </body>
 </html>    
 </body>

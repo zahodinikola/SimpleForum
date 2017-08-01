@@ -1,6 +1,6 @@
 'use strict'
 
-app.controller('groupsController', function($scope) {
+simpleForum.controller('groupsController', function($scope) {
             $scope.groups = [
                 {
                     "icon": "../app/assets/img/android-big-logo-32.png",

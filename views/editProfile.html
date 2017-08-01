@@ -8,7 +8,7 @@
     <title>Topics List</title>
 
 </head>
-<body ng-app="createProfile" ng-controller="createProfileController">
+<body ng-app="simpleForum" ng-controller="editProfileController">
     <div class="container">
         <div class="row">
 			<div class="col-sm-4">
@@ -65,24 +65,14 @@
 		<div>
     </div>
 
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="../node_modules/angular/angular.js"></script>
-    <script>
-        var app = angular.module('createProfile', []);
-        app.controller('createProfileController', function($scope) {
-            $scope.profile = {
-				name: "4unCoder",
-				email: "4uncoder@mail.com",
-				password: "111",
-				avatar: "../app/assets/img/myAvatar 200.png"
-			};
-			$scope.save = function() {
-
-			};
-			$scope.cancel = function() {
-
-			};
-        });
-    </script>
+    <script src="../node_modules/angular-route/angular-route.js"></script>
+    <script src="../node_modules/angular-breadcrumbs/dist/ng-breadcrumbs.min.js"></script>
+    
+    <script src="../app/app.js"></script>
+    <script src="../app/controllers/editProfileController.js"></script>
 </body>
 </html>    
 </body>

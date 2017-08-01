@@ -8,7 +8,7 @@
     <title>Topics List</title>
 
 </head>
-<body ng-app="viewTopic" ng-controller="viewTopicController">
+<body ng-app="simpleForum" ng-controller="viewTopicController">
     <div class="container">
         <table class="table table-bordered">
             <thead>
@@ -54,54 +54,14 @@
         </div>
     </div>
 
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="../node_modules/angular/angular.js"></script>
-    <script>
-        var app = angular.module('viewTopic', []);
-        app.controller('viewTopicController', function($scope) {
-            $scope.posts = [
-                {
-                    "group": "Android development",
-                    "topic": "Android is awesome",
-                    "post": "Lorem ipsum dolor sit amet. Officiis debitis aut rerum hic tenetur. Aliquam quaerat voluptatem sequi nesciunt. Asperiores repellat. commodi autem. Atque corrupti, quos dolores eos. Placeat, facere possimus, omnis dolor repellendus voluptate velit. Velit, sed ut labore. Quibusdam et quasi architecto beatae vitae dicta. Laboriosam, nisi ut et accusamus et accusamus et dolorum fuga quia. Temporibus autem vel illum, qui in ea commodi autem.",
-                    "date": "2017-07-31",
-                    "author": "Vovan",
-                    "avatar": "../app/assets/img/myAvatar 200.png",
-                    "registered": "2014-01-03",
-                    "posts": 11
-                },
-                {
-                    "group": "Android development",
-                    "topic": "Android is awesome",
-                    "post": "Lorem ipsum dolor sit amet. Officiis debitis aut rerum hic tenetur. Aliquam quaerat voluptatem sequi nesciunt. Asperiores repellat. commodi autem. Atque corrupti, quos dolores eos. Placeat, facere possimus, omnis dolor repellendus voluptate velit. Velit, sed ut labore. Quibusdam et quasi architecto beatae vitae dicta. Laboriosam, nisi ut et accusamus et accusamus et dolorum fuga quia. Temporibus autem vel illum, qui in ea commodi autem.",
-                    "date": "2017-07-31",
-                    "author": "Ingred",
-                    "avatar": "../app/assets/img/myAvatar_girl200.png",
-                    "registered": "2014-01-03",
-                    "posts": 11
-                },
-                {
-                    "group": "Android development",
-                    "topic": "Android is awesome",
-                    "post": "Lorem ipsum dolor sit amet. Officiis debitis aut rerum hic tenetur. Aliquam quaerat voluptatem sequi nesciunt. Asperiores repellat. commodi autem. Atque corrupti, quos dolores eos. Placeat, facere possimus, omnis dolor repellendus voluptate velit. Velit, sed ut labore. Quibusdam et quasi architecto beatae vitae dicta. Laboriosam, nisi ut et accusamus et accusamus et dolorum fuga quia. Temporibus autem vel illum, qui in ea commodi autem.",
-                    "date": "2017-07-31",
-                    "author": "Vovan",
-                    "avatar": "../app/assets/img/myAvatar 200.png",
-                    "registered": "2014-01-03",
-                    "posts": 11
-                },
-                {
-                    "group": "Android development",
-                    "topic": "Android is awesome",
-                    "post": "Lorem ipsum dolor sit amet. Officiis debitis aut rerum hic tenetur. Aliquam quaerat voluptatem sequi nesciunt. Asperiores repellat. commodi autem. Atque corrupti, quos dolores eos. Placeat, facere possimus, omnis dolor repellendus voluptate velit. Velit, sed ut labore. Quibusdam et quasi architecto beatae vitae dicta. Laboriosam, nisi ut et accusamus et accusamus et dolorum fuga quia. Temporibus autem vel illum, qui in ea commodi autem.",
-                    "date": "2017-07-31",
-                    "author": "Ingred",
-                    "avatar": "../app/assets/img/myAvatar_girl200.png",
-                    "registered": "2014-01-03",
-                    "posts": 11
-                }
-            ];
-        });
-    </script>
+    <script src="../node_modules/angular-route/angular-route.js"></script>
+    <script src="../node_modules/angular-breadcrumbs/dist/ng-breadcrumbs.min.js"></script>
+    
+    <script src="../app/app.js"></script>
+    <script src="../app/controllers/viewTopicController.js"></script>
 </body>
 </html>    
 </body>

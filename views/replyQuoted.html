@@ -8,7 +8,7 @@
     <title>Create topic</title>
 
 </head>
-<body ng-app="" ng-controller="">
+<body ng-app="simpleForum" ng-controller="replyQuotedController">
     <div class="container">
         <table class="table table-bordered">
             <thead>
@@ -50,18 +50,15 @@
         </div>
     </div>
 
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="../node_modules/angular/angular.js"></script>
-    <script>
-        var app = angular.module('', []);
-        app.controller('', function($scope) {
-            $scope.saveReply = function() {
-                alert('saving');
-            };
-            $scope.cancel = function() {
-                alert('cancelling');
-            };
-        });
-    </script>
+    <script src="../node_modules/angular-route/angular-route.js"></script>
+    <script src="../node_modules/angular-breadcrumbs/dist/ng-breadcrumbs.min.js"></script>
+    
+    <script src="../app/app.js"></script>
+    <script src="../app/controllers/replyQuotedController.js"></script>
+
 </body>
 </html>    
 </body>
